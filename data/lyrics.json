@@ -1,0 +1,29 @@
+[
+  { "time": 0, "text": "" },
+  { "time": 9, "text": "La la la" },
+  { "time": 11, "text": "La la la la" },
+  { "time": 14, "text": "La la la la la la la la" },
+  { "time": 19, "text": "La la la" },
+  { "time": 22, "text": "La la la la" },
+  { "time": 24, "text": "La la la la la la la" },
+
+  { "time": 30, "text": "Familiar streets and alleys, people coming and going" },
+  { "time": 36, "text": "Forgive me for leaving in haste this time" },
+  { "time": 41, "text": "How many layers of skin must I shed" },
+  { "time": 46, "text": "To make my wishes come true" },
+
+  { "time": 51, "text": "Light pierces through illusions" },
+  { "time": 57, "text": "I hope you’ve been well" },
+  { "time": 61, "text": "Can’t take off half of the disguise" },
+  { "time": 66, "text": "Another me exists in name only" },
+  { "time": 72, "text": "" },
+
+
+  { "time": 82, "text": "Don’t be afraid, ah" },
+  { "time": 87, "text": "You will arrive, ah" },
+  { "time": 93, "text": "Don’t stop, ah" },
+  { "time": 97, "text": "Just bloom like a flower facing the sun" },
+
+  { "time": 104, "text": "Do you remember me?" },
+  { "time": 110, "text": "Will you remember me?" }
+]
