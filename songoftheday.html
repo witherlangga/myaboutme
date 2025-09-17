@@ -2,19 +2,44 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>mySongsme</title>
   <link rel="stylesheet" href="style/style.css">
-  <!-- SweetAlert2 -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      font-family: "Times New Roman", serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+
+    .lyrics-container {
+      font-size: 26px;
+      text-align: center;
+      padding: 20px;
+      z-index: 9999;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+
+    audio.song {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <!-- Audio (src tidak perlu diisi, akan diganti oleh JS) -->
   <audio class="song"></audio>
-
-  <!-- Lirik -->
-  <div class="lyrics-container" id="lyrics"></div>
-
+  <div class="lyrics-container" id="lyrics">Lirik akan tampil di sini</div>
   <script src="script/main.js"></script>
 </body>
 </html>
