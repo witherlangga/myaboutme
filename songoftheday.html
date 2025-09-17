@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="style/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -15,7 +19,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      width: 100%;
       position: relative;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
@@ -27,6 +32,7 @@
       text-align: center;
       padding: 20px;
       z-index: 9999;
+      width: 100%;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
       will-change: transform;
@@ -34,6 +40,15 @@
 
     audio.song {
       display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio class="song"></audio>
+  <div class="lyrics-container" id="lyrics">Lirik akan tampil di sini</div>
+  <script src="script/main.js"></script>
+</body>
+</html>
     }
   </style>
 </head>
