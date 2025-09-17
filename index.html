@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>myaboutme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <style>
     body {
       background-color: white;
@@ -15,13 +16,21 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      position: relative;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
     }
 
     button {
       padding: 15px 30px;
-      font-size: 20px;    
+      font-size: 20px;
       cursor: pointer;
       margin-top: 25px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
+      z-index: 10;
     }
 
     .menu {
@@ -29,8 +38,12 @@
       top: 15px;
       right: 25px;
       cursor: pointer;
-      font-size: 40px; 
+      font-size: 40px;
       user-select: none;
+      z-index: 9999;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
     }
 
     .dropdown {
@@ -39,15 +52,18 @@
       top: 60px;
       right: 25px;
       background-color: #f9f9f9;
-      min-width: 200px; 
+      min-width: 200px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       border-radius: 5px;
-      z-index: 1;
+      z-index: 9998;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
     }
 
     .dropdown a {
       color: black;
-      padding: 16px 20px; 
+      padding: 16px 20px;
       text-decoration: none;
       display: block;
       font-size: 20px;
