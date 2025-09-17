@@ -2,19 +2,105 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mySongsme</title>
-  <link rel="stylesheet" href="style/style.css">
-  <!-- SweetAlert2 -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>myaboutme</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: "Times New Roman", serif;
+      font-size: 21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .menu {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+      font-size: 24px;
+      user-select: none;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    .dropdown a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <!-- Audio -->
-  <audio class="song" src="music/THE ERASED.mp3"></audio>
 
-  <!-- Lirik -->
-  <div class="lyrics-container" id="lyrics"></div>
+  <div class="menu" onclick="toggleDropdown()">⋮</div>
 
-  <script src="script/main.js"></script>
+  <div id="dropdown" class="dropdown">
+    <a href="songoftheday.html">Your song today</a>
+  </div>
+
+  <div>nyari apa?</div>
+  <button onclick="mainkan()">exit</button>
+
+  <audio id="audio">
+    <source src="music/mpo.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <script>
+    function mainkan() {
+      const audio = document.getElementById("audio");
+      audio.pause();
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    function toggleDropdown() {
+      document.getElementById("dropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.menu')) {
+        const dropdowns = document.getElementsByClassName("dropdown");
+        for (let i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
 </body>
 </html>
