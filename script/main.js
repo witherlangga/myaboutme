@@ -14,7 +14,6 @@ window.addEventListener('load', () => {
     });
 });
 
-// fungsi konversi "m:ss" ke detik
 function parseTime(t) {
     const parts = t.split(":").map(Number);
     return parts[0] * 60 + parts[1]; // menit*60 + detik
@@ -49,6 +48,11 @@ function loadLyrics(audio, lyricsData) {
 
         if (line) {
             lyricsContainer.textContent = line.text;
+
+            // trik supaya tidak blank di in-app browser
+            lyricsContainer.style.display = "none";
+            void lyricsContainer.offsetHeight; // paksa reflow
+            lyricsContainer.style.display = "flex";
         }
     });
 }
