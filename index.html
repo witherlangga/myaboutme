@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>myaboutme</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <style>
     body {
@@ -53,10 +54,11 @@
       top: 60px;
       right: 25px;
       background-color: #f9f9f9;
-      min-width: 200px;
+      min-width: 220px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       border-radius: 5px;
       z-index: 9998;
+      padding-bottom: 10px;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
       will-change: transform;
@@ -64,14 +66,32 @@
 
     .dropdown a {
       color: black;
-      padding: 16px 20px;
+      padding: 14px 20px;
       text-decoration: none;
       display: block;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .dropdown a:hover {
       background-color: #ddd;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .social-links a {
+      font-size: 28px;
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #555;
     }
 
     .show {
@@ -85,6 +105,11 @@
 
   <div id="dropdown" class="dropdown">
     <a href="songoftheday.html">song of the day</a>
+    <div class="social-links">
+      <a href="https://instagram.com/_.withlan" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/witherlangga" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://tiktok.com/@.withlann" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
   </div>
 
   <div>nyari apa?</div>
@@ -121,5 +146,4 @@
   </script>
 
 </body>
-  </html>
-  
+</html>
