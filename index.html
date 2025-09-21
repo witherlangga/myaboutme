@@ -15,7 +15,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <link rel="stylesheet" href="style/styleindex.css">
+    <link rel="stylesheet" href="style/styleindex.css" />
   </head>
   <body>
     <!===== HEADER NAVBAR =====>
@@ -27,32 +27,30 @@
       </div>
       <div class="menu" onclick="toggleDropdown()">⋮</div>
     </div>
+    <div id="dropdown" class="dropdown">
+      <a href="songoftheday.html">song of the day</a>
+      <a href="songoftheday.html">my special content</a>
+      <div class="social-links">
+        <a href="https://instagram.com/_.withlan" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://github.com/witherlangga" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://tiktok.com/@.withlann" target="_blank"
+          ><i class="fab fa-tiktok"></i
+        ></a>
+      </div>
+    </div>
 
     <!===== BODY =====>
-    <div class="body-1">
-      <div id="dropdown" class="dropdown">
-        <a href="songoftheday.html">song of the day</a>
-        <div class="social-links">
-          <a href="https://instagram.com/_.withlan" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://github.com/witherlangga" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://tiktok.com/@.withlann" target="_blank"
-            ><i class="fab fa-tiktok"></i
-          ></a>
-        </div>
-      </div>
+    <div>nyari apa?</div>
+    <button onclick="mainkan()">exit</button>
 
-      <div>nyari apa?</div>
-      <button onclick="mainkan()">exit</button>
-
-      <audio id="audio">
-        <source src="music/mpo.mp3" type="audio/mpeg" />
-        Browser kamu tidak mendukung audio.
-      </audio>
-    </div>
+    <audio id="audio">
+      <source src="music/mpo.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
 
     <!===== SCRIPT =====>
     <script>
