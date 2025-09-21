@@ -2,7 +2,10 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>special content</title>
     <style>
       body {
@@ -15,10 +18,13 @@
         justify-content: center;
         align-items: center;
         min-height: 100dvh;
+        height: -webkit-fill-available;
         margin: 0;
         padding: 20px;
         text-align: center;
         -webkit-text-size-adjust: 100%;
+        backface-visibility: hidden;
+        transform: translateZ(0);
       }
 
       div {
@@ -35,6 +41,8 @@
         background-color: black;
         color: white;
         transition: background 0.3s;
+        backface-visibility: hidden;
+        will-change: transform;
       }
 
       button:hover {
