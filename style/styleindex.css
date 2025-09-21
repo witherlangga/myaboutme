@@ -1,27 +1,23 @@
-html, body {
+html,
+body {
   background-color: white;
   color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  z-index: 1000;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 70px; /* supaya tidak ketiban navbar */
   overflow-y: scroll;
-  scrollbar-width: none;
+  scrollbar-width: none; /* Firefox */
 }
 
+/* Hilangkan scrollbar tapi tetap bisa scroll */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+  background: transparent;
 }
 
 /* === HEADER NAVBAR === */
 .header {
+  font-family: "Montserrat", sans-serif !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,6 +28,8 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -84,31 +82,6 @@ body::-webkit-scrollbar {
   background-color: #ddd;
 }
 
-.sub-dropdown {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: -200px; /* pindah ke kiri dari dropdown utama */
-  background-color: #f9f9f9;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  z-index: 9999;
-}
-
-.sub-dropdown a {
-  padding: 12px 16px;
-  display: block;
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.sub-dropdown a:hover {
-  background-color: #ddd;
-}
-
-
 .social-links {
   display: flex;
   justify-content: center;
@@ -131,9 +104,106 @@ body::-webkit-scrollbar {
   display: block;
 }
 
-button {
-  padding: 8px 25px;
-  font-size: 15px;
-  cursor: pointer;
-  margin-top: 25px;
+/* === BODY CONTAINER (Foto + Teks) === */
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
+.contain img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  max-width: 500px;
+}
+
+.text-h1 {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: 600 !important;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.text-h2 {
+  font-family: 'Times New Roman', Times, serif !important;
+  letter-spacing: 1px;
+  color: #800020;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-p {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.text-p2 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contain img {
+    width: 80%;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+
+.footer-one {
+    height: 12;
+    font-size: 20;
+}
+.footer p {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-socials a {
+  font-size: 28px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #555;
+}
+

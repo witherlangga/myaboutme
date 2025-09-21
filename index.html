@@ -15,6 +15,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style/styleindex.css" />
   </head>
   <body>
@@ -22,8 +31,9 @@
     <div class="header">
       <div class="nav-links">
         <a href="#">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About Me</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#bahasa">Learn</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="menu" onclick="toggleDropdown()">⋮</div>
     </div>
@@ -44,13 +54,139 @@
     </div>
 
     <!===== BODY =====>
-    <div>nyari apa?</div>
-    <button onclick="mainkan()">exit</button>
+    <div class="contain" id="aboutme">
+      <img
+        src="img/Gehrman Sparrow (Lord of the Mysteries).jpeg.jpg"
+        alt="Foto Saya"
+      />
+      <div>
+        <h2 class="text-h2">About Me</h2>
+        <h1 class="text-h1">Erlangga Syafutra</h1>
+        <p class="text-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+          suscipit, dolorem, voluptatum eius error reprehenderit quos et maxime
+          dolores adipisci odio aperiam dolorum quaerat aut neque! Voluptatem
+          deserunt fugiat nulla?
+        </p>
+        <p class="text-p2">
+          "Moon lights the frost-filled night, the dagger shines with a cold
+          light. If not for the harshness of the winter, how could we look
+          forward to spring!"
+        </p>
+      </div>
+    </div>
 
-    <audio id="audio">
-      <source src="music/mpo.mp3" type="audio/mpeg" />
-      Browser kamu tidak mendukung audio.
-    </audio>
+    <section
+      class="learn"
+      id="bahasa"
+      style="padding: 40px 20px; background: #f9f9f9; text-align: center"
+    >
+      <h2 class="text-h2">Currently Learning</h2>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+          margin-top: 30px;
+        "
+      >
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">HTML</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">CSS</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">JavaScript</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Python</p>
+        </div>
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            alt="PHP Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">PHP</p>
+        </div>
+        <div style="width: 120px; text-align: center">
+          <img
+            src="img/pngwing.com.png"
+            alt="Laragon Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Laragon</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+            alt="Laravel Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Laravel</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="MySQL Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">MySQL</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg"
+            alt="Nginx Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Nginx</p>
+        </div>
+      </div>
+    </section>
+
+    <!===== FOOTER =====>
+    <footer class="footer" id="contact">
+      <h2 class="footer-one">Contact Me</h2>
+      <div class="footer-socials">
+        <a href="https://github.com/witherlangga" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://instagram.com/_.withlan" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://wa.me/6283189932994" target="_blank"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
 
     <!===== SCRIPT =====>
     <script>
