@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 
 function parseTime(t) {
     const parts = t.split(":").map(Number);
-    return parts[0] * 60 + parts[1]; // menit*60 + detik
+    return parts[0] * 60 + parts[1];
 }
 
 function playRandomSong() {
@@ -49,10 +49,35 @@ function loadLyrics(audio, lyricsData) {
         if (line) {
             lyricsContainer.textContent = line.text;
 
-            // trik supaya tidak blank di in-app browser
             lyricsContainer.style.display = "none";
-            void lyricsContainer.offsetHeight; // paksa reflow
+            void lyricsContainer.offsetHeight;
             lyricsContainer.style.display = "flex";
         }
+    });
+}
+
+function loadLyrics(audio, lyricsData) {
+    const lyricsContainer = document.getElementById("lyrics");
+    const backBtn = document.getElementById("backBtn");
+
+    audio.addEventListener("timeupdate", () => {
+        const current = audio.currentTime;
+        const line = lyricsData.find((l, i) => {
+            const thisTime = parseTime(l.time);
+            const next = lyricsData[i + 1] ? parseTime(lyricsData[i + 1].time) : null;
+            return current >= thisTime && (!next || current < next);
+        });
+
+        if (line) {
+            lyricsContainer.textContent = line.text;
+
+            lyricsContainer.style.display = "none";
+            void lyricsContainer.offsetHeight;
+            lyricsContainer.style.display = "flex";
+        }
+    });
+
+    audio.addEventListener("ended", () => {
+        backBtn.classList.add("show");
     });
 }

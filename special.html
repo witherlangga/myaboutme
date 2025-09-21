@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>special content</title>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        font-family: "Times New Roman", serif;
+        font-size: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>nyari apa?</div>
+    <button onclick="mainkan()">keluar</button>
+
+    <audio id="audio">
+      <source src="music/mpo.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+    <script>
+      function mainkan() {
+        const audio = document.getElementById("audio");
+        audio.currentTime = 0;
+        audio.play();
+
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
