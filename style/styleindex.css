@@ -1,4 +1,4 @@
-body {
+html, body {
   background-color: white;
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -8,16 +8,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  z-index: 1000;
   margin: 0;
+  padding-top: 60px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* === HEADER NAVBAR === */
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 12px 25px;
+  background-color: white;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
