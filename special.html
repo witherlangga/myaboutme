@@ -8,6 +8,7 @@
     />
     <title>special content</title>
     <style>
+      html,
       body {
         background-color: white;
         color: black;
@@ -25,6 +26,14 @@
         -webkit-text-size-adjust: 100%;
         backface-visibility: hidden;
         transform: translateZ(0);
+        overflow-y: scroll;
+        scrollbar-width: none;
+      }
+
+      html::-webkit-scrollbar,
+      body::-webkit-scrollbar {
+        display: none;
+        background: transparent;
       }
 
       div {
