@@ -218,77 +218,558 @@
   {
     "title": "Consume (feat. Goon Des Garcons)",
     "file": "music/Consume.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:01", "text": "本当は私気づいてたんです" },
+      { "time": "00:04", "text": "あなたが私を見ていてくれたこと" },
+      { "time": "00:14", "text": "Alright, alright, whoa" },
+      { "time": "00:16", "text": "Why you pointing at me with that knife?" },
+      {
+        "time": "00:19",
+        "text": "I've been cutting corners all my life, girl"
+      },
+      { "time": "00:22", "text": "The terror doesn't blossom overnight, no" },
+      {
+        "time": "00:27",
+        "text": "She's running through the city in a rampage"
+      },
+      {
+        "time": "00:30",
+        "text": "Pressing on her fingers 'til the bones break"
+      },
+      {
+        "time": "00:34",
+        "text": "There's blood all in her nose from the propane"
+      },
+      {
+        "time": "00:37",
+        "text": "But a needle to the skin will make the pain fade"
+      },
+      { "time": "00:39", "text": "Yeah, ah-ah" },
+      { "time": "00:42", "text": "This is what I do, ah-ah" },
+      { "time": "00:45", "text": "Take another bite, ah-ah" },
+      { "time": "00:48", "text": "Big enough to chew" },
+      { "time": "00:52", "text": "She said, 'Careful, or you'll lose it'" },
+      { "time": "00:56", "text": "But, girl, I'm only human" },
+      {
+        "time": "01:00",
+        "text": "And I know there's a blade where your heart is"
+      },
+      { "time": "01:03", "text": "And you know how to use it" },
+      {
+        "time": "01:06",
+        "text": "And you can take my flesh if you want, girl"
+      },
+      { "time": "01:09", "text": "But, baby, don't abuse it" },
+      {
+        "time": "01:13",
+        "text": "These voices in my head screaming, 'Run, now'"
+      },
+      { "time": "01:16", "text": "I'm praying that they're human" },
+      {
+        "time": "01:19",
+        "text": "Rollin', rollin', rolling back your eyes through your mind like"
+      },
+      {
+        "time": "01:25",
+        "text": "Oh, whoa, the pressure in the gland's tight"
+      },
+      {
+        "time": "01:32",
+        "text": "Yeah, whoa, yeah, it's either kill or be killed like"
+      },
+      {
+        "time": "01:38",
+        "text": "Oh, whoa, the blood is either poured or it's spilt like"
+      },
+      { "time": "01:45", "text": "Yeah, ah-ah" },
+      { "time": "01:48", "text": "This is what I do, ah-ah" },
+      { "time": "01:51", "text": "Take another bite, ah-ah" },
+      { "time": "01:54", "text": "Big enough to chew" },
+      { "time": "01:59", "text": "She said, 'Careful, or you'll lose it'" },
+      { "time": "02:02", "text": "But, girl, I'm only human" },
+      {
+        "time": "02:05",
+        "text": "And I know there's a blade where your heart is"
+      },
+      { "time": "02:09", "text": "And you know how to use it" },
+      {
+        "time": "02:12",
+        "text": "And you can take my flesh if you want, girl"
+      },
+      { "time": "02:15", "text": "But, baby, don't abuse it" },
+      {
+        "time": "02:18",
+        "text": "These voices in my head screaming, 'Run, now'"
+      },
+      { "time": "02:22", "text": "I'm praying that they're human" },
+      { "time": "02:25", "text": "Alright, alright, whoa" },
+      { "time": "02:28", "text": "Love you but you cannot spend the night" },
+      {
+        "time": "02:30",
+        "text": "Nah, I've been alone almost all my life, girl"
+      },
+      {
+        "time": "02:34",
+        "text": "And shit like that don't change up overnight, sweet"
+      },
+      { "time": "02:39", "text": "I let you sleep in my tee (tee)" },
+      {
+        "time": "02:41",
+        "text": "Tell me the things that you don't normally tweet"
+      },
+      {
+        "time": "02:44",
+        "text": "Acid and LSD and smokin' blunts on the beach"
+      },
+      {
+        "time": "02:47",
+        "text": "69 down 69, so we can both get a piece, yeah"
+      },
+      {
+        "time": "02:51",
+        "text": "I've been cutting corners like my whole life"
+      },
+      {
+        "time": "02:54",
+        "text": "Backstabbing bitches tryna kill me with the whole knife"
+      },
+      {
+        "time": "02:57",
+        "text": "Day I die'll be the only day a nigga ghostwrite"
+      },
+      {
+        "time": "03:00",
+        "text": "When I go, they'll treat me like a god if this shit goes right"
+      },
+      { "time": "03:04", "text": "She said, 'Careful, or you'll lose it'" },
+      { "time": "03:07", "text": "But, girl, I'm only human" },
+      {
+        "time": "03:11",
+        "text": "And I know there's a blade where your heart is"
+      },
+      { "time": "03:14", "text": "And you know how to use it" },
+      {
+        "time": "03:17",
+        "text": "And you can take my flesh if you want, girl"
+      },
+      { "time": "03:21", "text": "But, baby, don't abuse it" },
+      {
+        "time": "03:24",
+        "text": "These voices in my head screaming, 'Run, now'"
+      },
+      { "time": "03:28", "text": "I'm praying that they're human" },
+      {
+        "time": "03:31",
+        "text": "Please understand that I'm trying my hardest"
+      },
+      {
+        "time": "03:34",
+        "text": "My head's a mess, but I'm trying regardless"
+      },
+      { "time": "03:37", "text": "Anxiety is one hell of a problem" },
+      { "time": "03:41", "text": "She's latching onto me, I can't resolve it" },
+      {
+        "time": "03:45",
+        "text": "It's not right, it's not fair, it's not fair, it's not fair"
+      },
+      { "time": "03:52", "text": "It's no fair, it's no fair" },
+      { "time": "03:55", "text": "Oh, no, no, no (ooh-ooh)" },
+      { "time": "04:04", "text": "Don't run, don't run" }
+    ]
   },
   {
     "title": "Sweet",
     "file": "music/Sweet.mp3",
     "lyrics": [
-      { "time": "00:00", "text": "Watching the video where you're lying" },
-      { "time": "00:10", "text": "In your red lingerie ten times nightly" },
+      { "time": "00:00", "text": "Watching the video that you sent me" },
+      { "time": "00:10", "text": "The one where you're showering" },
+      { "time": "00:15", "text": "With wet hair dripping" },
+      { "time": "00:20", "text": "You know that I'm obsessed with your body" },
       {
-        "time": "00:20",
+        "time": "00:31",
+        "text": "But it's the way you smile that does it for me"
+      },
+      { "time": "00:40", "text": "It's so sweet, knowing that you love me" },
+      {
+        "time": "00:50",
+        "text": "Though we don't need to say it to each other"
+      },
+      { "time": "00:57", "text": "Sweet, knowing that I love you" },
+      { "time": "01:05", "text": "And running my fingers through your hair" },
+      { "time": "01:10", "text": "It's so sweet" },
+
+      { "time": "01:15", "text": "Watching the video where you're lying" },
+      { "time": "01:25", "text": "In your red lingerie ten times nightly" },
+      {
+        "time": "01:35",
         "text": "You know I think your skin's the perfect color"
       },
       {
-        "time": "00:30",
+        "time": "01:45",
         "text": "But it's always your eyes that pull me under"
       },
-      { "time": "00:40", "text": "It's so sweet knowing that you love me" },
+      { "time": "01:55", "text": "It's so sweet knowing that you love me" },
       {
-        "time": "00:50",
-        "text": "Though we don't need to say it to each other, sweet"
+        "time": "02:05",
+        "text": "Though we don't need to say it to each other"
       },
+      { "time": "02:11", "text": "Sweet, knowing that I love you" },
+      { "time": "02:20", "text": "And running my fingers through your hair" },
+      { "time": "02:25", "text": "It's so sweet" },
+      { "time": "02:29", "text": "" },
+
+      { "time": "02:50", "text": "And I would gladly break it" },
+      { "time": "02:53", "text": "I would gladly break my heart for you" },
+      { "time": "03:00", "text": "And I would gladly break it" },
+      { "time": "03:03", "text": "I would gladly break my heart for you" },
+      { "time": "03:10", "text": "And I would gladly break it" },
+      { "time": "03:13", "text": "I would gladly break my heart for you" },
+      { "time": "03:19", "text": "And I would gladly break it" },
+      { "time": "03:23", "text": "I would gladly break my heart for you" },
+      { "time": "03:28", "text": "" },
+
+      { "time": "03:29", "text": "It's so sweet knowing that you love me" },
       {
-        "time": "00:59",
-        "text": "Knowing that I love you, and running my fingers through your hair"
+        "time": "03:39",
+        "text": "Though we don't need to say it to each other"
       },
-      { "time": "01:09", "text": "It's so sweet" },
-      { "time": "01:12", "text": "" },
-      { "time": "01:34", "text": "And I would gladly break it" },
-      { "time": "01:37", "text": "I would gladly break my heart for you" },
-      { "time": "01:44", "text": "And I would gladly break it" },
-      { "time": "01:47", "text": "I would gladly break my heart for you" },
-      { "time": "01:54", "text": "And I would gladly break it" },
-      { "time": "01:57", "text": "I would gladly break my heart for you" },
-      { "time": "02:04", "text": "And I would gladly break it" },
-      { "time": "02:07", "text": "I would gladly break my heart for you" },
-      { "time": "02:13", "text": "It's so sweet" }
+      { "time": "03:45", "text": "Sweet, knowing that I love you" },
+      { "time": "03:53", "text": "And running my fingers through your hair" },
+      { "time": "03:58", "text": "It's so sweet" }
     ]
   },
   {
     "title": "Cry",
     "file": "music/Cry.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      { "time": "00:54", "text": "It's making you cry every time" },
+      { "time": "01:02", "text": "You give your love to me this way" },
+      { "time": "01:09", "text": "Saying you'd wait for me to stay" },
+      { "time": "01:15", "text": "I know it hurts you" },
+      { "time": "01:18", "text": "But I need to tell you something" },
+      { "time": "01:29", "text": "My heart just can't be faithful for long" },
+      { "time": "01:39", "text": "I swear I'll only make you cry" },
+      { "time": "01:48", "text": "Maybe I'd change for you someday" },
+      { "time": "01:55", "text": "But I can't help the way I feel" },
+      { "time": "02:02", "text": "Wish I was good, wish that I could" },
+      { "time": "02:09", "text": "Give you my love now" },
+      { "time": "02:12", "text": "But I need to tell you something" },
+      { "time": "02:23", "text": "My heart just can't be faithful for long" },
+      { "time": "02:33", "text": "I swear I'll only make you cry" },
+      { "time": "02:43", "text": "" },
+      { "time": "03:07", "text": "I need to tell you something" },
+      { "time": "03:17", "text": "My heart just can't be faithful for long" },
+      { "time": "03:27", "text": "I swear I'll only make you cry" }
+    ]
   },
   {
     "title": "Friends",
     "file": "music/Friends.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      {
+        "time": "00:26",
+        "text": "Girl, tell me what you're doing on the other side?"
+      },
+      {
+        "time": "00:33",
+        "text": "And so, just tell me, what you're doing with that other guy?"
+      },
+      {
+        "time": "00:40",
+        "text": "'Cause I ain't got patience to slow down the bass"
+      },
+      { "time": "00:43", "text": "All your girlfriends are wasted" },
+      { "time": "00:45", "text": "They need it, they chase it" },
+      { "time": "00:48", "text": "Face it, you want it, you crave it" },
+      {
+        "time": "00:50",
+        "text": "Believe when I say that you'll know once you taste it"
+      },
+      {
+        "time": "00:54",
+        "text": "All of your friends have been here for too long"
+      },
+      { "time": "00:58", "text": "They must be waiting for you to move on" },
+      {
+        "time": "01:01",
+        "text": "Girl, I'm not with it, I'm way too far gone"
+      },
+      { "time": "01:05", "text": "I'm not ready, eyes heavy now" },
+      {
+        "time": "01:08",
+        "text": "Heart on your sleeve like you've never been loved"
+      },
+      {
+        "time": "01:11",
+        "text": "Running in circles, now look what you've done"
+      },
+      { "time": "01:15", "text": "Give you my word as you take it and run" },
+      { "time": "01:18", "text": "Wish you'd let me stay, I'm ready now" },
+      {
+        "time": "01:22",
+        "text": "Just give some time and space to realize that you"
+      },
+      {
+        "time": "01:29",
+        "text": "Were busy lying sleeping 'round with other guys"
+      },
+      { "time": "01:32", "text": "And what the hell were we?" },
+      { "time": "01:35", "text": "Tell me we weren't just friends" },
+      { "time": "01:37", "text": "This doesn't make much sense, no" },
+      { "time": "01:41", "text": "But I'm not hurt, I'm tense" },
+      { "time": "01:44", "text": "'Cause I'll be fine without you babe" }
+    ]
   },
   {
     "title": "Let the World burn",
     "file": "music/Let the World Burn.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      { "time": "00:04", "text": "Lost in the fog" },
+      { "time": "00:09", "text": "I fear that there's still further to fall" },
+      { "time": "00:14", "text": "It's dangerous 'cause I want it all" },
+      { "time": "00:19", "text": "And I don't think I care what it costs" },
+      { "time": "00:24", "text": "I shouldn't have fallen in love" },
+      { "time": "00:27", "text": "Look what it made me become" },
+      { "time": "00:29", "text": "I let you get too close" },
+      { "time": "00:32", "text": "Just to wake up alone" },
+      { "time": "00:34", "text": "And I know you think you can run" },
+      { "time": "00:37", "text": "You're scared to believe I'm the one" },
+      { "time": "00:40", "text": "But I just can't let you go" },
+      { "time": "00:45", "text": "I'd let the world burn" },
+      { "time": "00:47", "text": "Let the world burn for you" },
+      { "time": "00:51", "text": "This is how it always had to end" },
+      { "time": "00:53", "text": "If I can't have you then no one can" },
+      { "time": "00:56", "text": "I'd let it burn" },
+      { "time": "00:58", "text": "I'd let the world burn" },
+      { "time": "01:01", "text": "Just to hear you calling out my name" },
+      { "time": "01:04", "text": "Watching it all go down in flames" },
+      { "time": "01:07", "text": "Fear in their eyes" }
+    ]
   },
   {
     "title": "love.",
     "file": "music/love.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      { "time": "00:33", "line": "Saram sai saram" },
+      { "time": "00:37", "line": "Baram sai baram" },
+      { "time": "00:41", "line": "Gakjaui yeomwoni baraego" },
+      { "time": "00:51", "line": "Deotchildoeeo" },
+      { "time": "00:55", "text": "" },
+      { "time": "00:00", "line": "Bari daeul mankeum gudeojimyeon" },
+      { "time": "01:15", "line": "Biroso nae sesangi doeeojwo" },
+      { "time": "01:33", "text": "" },
+      { "time": "01:35", "line": "Naui jageun maeumdo" },
+      { "time": "01:43", "line": "Geu ane jaran naeumdo" },
+      { "time": "01:51", "line": "Buseojigo gudeojigo" },
+      { "time": "01:58", "line": "Noganaerigonamyeon" },
+      { "time": "02:05", "line": "Geujeseoya boineun naui yeongwon" },
+      { "time": "02:17", "text": "" },
+      { "time": "02:45", "line": "Saram sai sarang" },
+      { "time": "02:49", "line": "Modu hamkke moyeoseo" },
+      { "time": "03:00", "line": "Yeongwoneul barago" },
+      { "time": "03:04", "line": "Mom maeum mudeonaemyeon" },
+      { "time": "03:11", "text": "" },
+      { "time": "03:19", "line": "Biroso uriui sesangi wanbyeokae" },
+      { "time": "03:34", "text": "" },
+      { "time": "03:39", "line": "Sarangeuro" },
+      { "time": "03:43", "line": "Sarangeuro" },
+      { "time": "03:47", "line": "Naui jageun maeumdo" },
+      { "time": "03:55", "line": "Geu ane jageun padocheoreom" },
+      { "time": "04:02", "line": "Buseojigo millyeowaseon" },
+      { "time": "04:10", "line": "Nege noganaerigo" },
+      { "time": "04:17", "text": "Geujeseoya boineun naui yeongwon" }
+    ]
   },
   {
     "title": "Meddle About",
     "file": "music/Meddle About.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      { "time": "00:24", "line": "Well, come and get it now" },
+      { "time": "00:26", "line": "Come and get it now" },
+      { "time": "00:27", "line": "Baby, show me what you're doing" },
+      { "time": "00:29", "line": "Come and turn around" },
+      { "time": "00:30", "line": "'Cause it's not just a figure of speech" },
+      { "time": "00:33", "line": "You got me down on my knees" },
+      { "time": "00:34", "line": "It's getting harder to breathe out" },
+      { "time": "00:37", "line": "We only met each other just the other day" },
+      {
+        "time": "00:39",
+        "line": "But you already got me feeling some type of way"
+      },
+      { "time": "00:42", "line": "Now, if I could figure it out" },
+      { "time": "00:44", "line": "I'd take you back to my house" },
+      { "time": "00:46", "line": "So we could meddle about" },
+      { "time": "00:52", "line": "We could meddle about" },
+      { "time": "00:55", "line": "Whoa-oh-oh-oh" },
+      { "time": "00:58", "line": "We could meddle about" },
+      { "time": "01:01", "line": "No, whoa-oh-oh-oh-ooh" },
+      { "time": "01:04", "line": "We could meddle about" },
+      { "time": "01:08", "line": "Whoa-oh-oh-oh-oh" },
+      { "time": "01:10", "text": "We could meddle about" },
+      { "time": "01:13", "line": "Girl, just scream it out" },
+      { "time": "01:15", "line": "Tell me what you're thinking" },
+      { "time": "01:17", "line": "No, I wanna see you undress now" },
+      {
+        "time": "01:19",
+        "line": "I wanna hear you confess now, oh-oh, oh, whoa"
+      },
+      { "time": "01:24", "line": "We only met each other just the other day" },
+      {
+        "time": "01:27",
+        "line": "But you already got me feeling some type of way"
+      },
+      { "time": "01:30", "line": "Now, if I could figure it out" },
+      { "time": "01:32", "line": "I'd take you back to my house" },
+      { "time": "01:34", "line": "So we could meddle about" },
+      { "time": "01:40", "line": "We could meddle about" },
+      { "time": "01:43", "line": "Whoa-oh-oh-oh" },
+      { "time": "01:46", "line": "We could meddle about (end)" }
+    ]
   },
   {
     "title": "Sunsetz",
     "file": "music/Sunsetz.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      { "time": "00:25", "text": "Sunsets" },
+      { "time": "00:26", "text": "We wander through a foreign town" },
+      { "time": "00:32", "text": "Strangely, there's nobody else around" },
+      {
+        "time": "00:38",
+        "text": "So you open your dress and show me your tits"
+      },
+      { "time": "00:45", "text": "On the swing set at the old playground" },
+      { "time": "00:49", "text": "" },
+      { "time": "00:52", "text": "And when you go away" },
+      { "time": "00:55", "text": "I still see you" },
+      { "time": "00:58", "text": "The sunlight on your face in my rearview" },
+      { "time": "01:05", "text": "" },
+      { "time": "01:16", "text": "Sunsets" },
+      { "time": "01:17", "text": "I wanna hear your voice" },
+      { "time": "01:22", "text": "A love that nobody could destroy" },
+      {
+        "time": "01:30",
+        "text": "Took photographs like Brautigan's book covers"
+      },
+      { "time": "01:38", "text": "That we both adored" },
+      { "time": "01:43", "text": "And when you go away" },
+      { "time": "01:45", "text": "I still see you" },
+      { "time": "01:49", "text": "The sunlight on your face in my rearview" },
+      { "time": "01:55", "text": "This always happens to me this way" },
+      { "time": "02:01", "text": "Recurring visions of such sweet days" },
+      { "time": "02:07", "text": "" },
+      { "time": "02:34", "text": "And when you go away" },
+      { "time": "02:36", "text": "I still see you" },
+      { "time": "01:40", "text": "The sunlight on your face in my rearview" },
+      { "time": "02:47", "text": "When you go away" },
+      { "time": "02:49", "text": "I still see you" },
+      { "time": "02:53", "text": "The sunlight on your face in my rearview" }
+    ]
   },
   {
     "title": "Mind Games",
     "file": "music/Mind Games.mp3",
-    "lyrics": [{ "time": "00:00", "text": "" }]
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      {
+        "time": "00:20",
+        "text": "There's another side that you don't know, you don't know"
+      },
+      {
+        "time": "00:25",
+        "text": "I can't wait to get you all alone, all alone"
+      },
+      {
+        "time": "00:31",
+        "text": "Once I'm in there ain't no letting go, letting go"
+      },
+      { "time": "00:37", "text": "Watch me turn your mind into my home" },
+      { "time": "00:42", "text": "Ooo, Ooo, Ooo" },
+      { "time": "00:51", "text": "(Mind mind games until you lose control)" },
+      { "time": "00:55", "text": "Ooo, Ooo, Ooo" },
+      { "time": "01:05", "text": "Now that I'm in there's no letting go" },
+      { "time": "01:08", "text": "And your emptiness begins" },
+      { "time": "01:11", "text": "Once I grip onto your mind and soul" },
+      { "time": "01:13", "text": "Your brightness starts to dim" },
+      { "time": "01:16", "text": "Sin after sin you won't feel no more" },
+      { "time": "01:19", "text": "You've lost your trust again" },
+      { "time": "01:22", "text": "I know you wish you could let me know" },
+      { "time": "01:25", "text": "That you're praying for an end" },
+      {
+        "time": "01:27",
+        "text": "I can lie to you and tell you you can get me out your head"
+      },
+      {
+        "time": "01:33",
+        "text": "But I'm lovin' all the pain I'm causing you too much instead, baby"
+      },
+      {
+        "time": "01:38",
+        "text": "There's another side that you don't know, you don't know"
+      },
+      {
+        "time": "01:45",
+        "text": "I can't wait to get you all alone, all alone"
+      },
+      {
+        "time": "01:50",
+        "text": "Once I'm in there ain't no letting go, letting go"
+      },
+      { "time": "01:56", "text": "Watch me turn your mind into my home" },
+      { "time": "02:02", "text": "Ooo, Ooo, Ooo" },
+      { "time": "02:10", "text": "(Mind mind games until you lose control)" },
+      { "time": "02:14", "text": "Ooo, Ooo, Ooo" },
+      { "time": "02:21", "text": "(Mind mind games until you lose control)" }
+    ]
+  },
+  {
+    "title": "Mind Games",
+    "file": "music/Back to Friends.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" },
+      { "time": "00:23", "text": "Touch my body tender" },
+      { "time": "00:28", "text": "'Cause the feeling makes me weak" },
+      { "time": "00:33", "text": "Kicking off the covers" },
+      {
+        "time": "00:38",
+        "text": "I see the ceiling, while you're looking down at me"
+      },
+      { "time": "00:44", "text": "How can we go back to being friends" },
+      { "time": "00:49", "text": "When we just shared a bed?" },
+      { "time": "00:54", "text": "How can you look at me and pretend" },
+      { "time": "00:59", "text": "I'm someone you've never met?" },
+      { "time": "01:04", "text": "It was last December" },
+      { "time": "01:08", "text": "You were layin' on my chest" },
+      { "time": "01:15", "text": "I still remember" },
+      {
+        "time": "01:19",
+        "text": "I was scared to take a breath, didn't want you to move your head"
+      },
+      { "time": "01:25", "text": "How can we go back to being friends" },
+      { "time": "01:30", "text": "When we just shared a bed? (Yeah)" },
+      { "time": "01:35", "text": "How can you look at me and pretend" },
+      { "time": "01:40", "text": "I'm someone you've never met?" },
+      { "time": "01:46", "text": "The devil in your eyes" },
+      { "time": "01:52", "text": "Won't deny the lies" },
+      { "time": "01:55", "text": "You've sold, I'm holding on too tight" },
+      { "time": "02:02", "text": "While you let go, this is casual" },
+      { "time": "02:10", "text": "" },
+      { "time": "02:17", "text": "How can we go back to being friends" },
+      { "time": "02:22", "text": "When we just shared a bed? (Yeah)" },
+      { "time": "02:27", "text": "How can you look at me and pretend" },
+      { "time": "02:32", "text": "I'm someone you've never met?" },
+      { "time": "02:37", "text": "How can we go back to being friends" },
+      { "time": "02:42", "text": "When we just shared a bed? (Yeah)" },
+      { "time": "02:48", "text": "How can you look at me and pretend" },
+      { "time": "02:52", "text": "I'm someone you've never met?" },
+      { "time": "02:59", "text": "" },
+      { "time": "03:01", "text": "I'm someone you've never met" },
+      { "time": "03:05", "text": "Oh yeah" }
+    ]
   }
 ]
