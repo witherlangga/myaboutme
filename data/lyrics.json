@@ -4,31 +4,34 @@
     "file": "music/THE ERASED.mp3",
     "lyrics": [
       { "time": "0:00", "text": "" },
-  { "time": "0:09", "text": "La la la" },
-  { "time": "0:11", "text": "La la la la" },
-  { "time": "0:14", "text": "La la la la la la la la" },
-  { "time": "0:19", "text": "La la la" },
-  { "time": "0:22", "text": "La la la la" },
-  { "time": "0:24", "text": "La la la la la la la" },
+      { "time": "0:09", "text": "La la la" },
+      { "time": "0:11", "text": "La la la la" },
+      { "time": "0:14", "text": "La la la la la la la la" },
+      { "time": "0:19", "text": "La la la" },
+      { "time": "0:22", "text": "La la la la" },
+      { "time": "0:24", "text": "La la la la la la la" },
 
-  { "time": "0:30", "text": "Familiar streets and alleys, people coming and going" },
-  { "time": "0:36", "text": "Forgive me for leaving in haste this time" },
-  { "time": "0:41", "text": "How many layers of skin must I shed" },
-  { "time": "0:46", "text": "To make my wishes come true" },
+      {
+        "time": "0:30",
+        "text": "Familiar streets and alleys, people coming and going"
+      },
+      { "time": "0:36", "text": "Forgive me for leaving in haste this time" },
+      { "time": "0:41", "text": "How many layers of skin must I shed" },
+      { "time": "0:46", "text": "To make my wishes come true" },
 
-  { "time": "0:51", "text": "Light pierces through illusions" },
-  { "time": "0:57", "text": "I hope you’ve been well" },
-  { "time": "1:01", "text": "Can’t take off half of the disguise" },
-  { "time": "1:06", "text": "Another me exists in name only" },
-  { "time": "1:12", "text": "" },
+      { "time": "0:51", "text": "Light pierces through illusions" },
+      { "time": "0:57", "text": "I hope you’ve been well" },
+      { "time": "1:01", "text": "Can’t take off half of the disguise" },
+      { "time": "1:06", "text": "Another me exists in name only" },
+      { "time": "1:12", "text": "" },
 
-  { "time": "1:22", "text": "Don’t be afraid, ah" },
-  { "time": "1:27", "text": "You will arrive, ah" },
-  { "time": "1:33", "text": "Don’t stop, ah" },
-  { "time": "1:37", "text": "Just bloom like a flower facing the sun" },
+      { "time": "1:22", "text": "Don’t be afraid, ah" },
+      { "time": "1:27", "text": "You will arrive, ah" },
+      { "time": "1:33", "text": "Don’t stop, ah" },
+      { "time": "1:37", "text": "Just bloom like a flower facing the sun" },
 
-  { "time": "1:44", "text": "Do you remember me?" },
-  { "time": "1:50", "text": "Will you remember me?" }
+      { "time": "1:44", "text": "Do you remember me?" },
+      { "time": "1:50", "text": "Will you remember me?" }
     ]
   },
   {
@@ -36,48 +39,299 @@
     "file": "music/Somebody's Pleasure.mp3",
     "lyrics": [
       { "time": "0:07", "text": "I've been too busy, ignoring, and hiding" },
-    { "time": "0:13", "text": "About what my heart actually say" },
-    { "time": "0:18", "text": "" },
-    { "time": "0:23", "text": "Stay awake while I'm drowning on my thoughts" },
-    { "time": "0:30", "text": "Sometimes a happiness is just a happiness" },
-    { "time": "0:36", "text": "" },
-    { "time": "0:41", "text": "I've never been enjoyin' my serenity" },
-    { "time": "0:46", "text": "Even if I've got a lot of company" },
-    { "time": "0:52", "text": "That makes me happy" },
-    { "time": "0:55", "text": "Soul try to figure it out" },
-    { "time": "1:00", "text": "From where I've been escapin'" },
-    { "time": "1:04", "text": "Running to end all the sin" },
-    { "time": "1:08", "text": "Get away from the pressure" },
-    { "time": "1:12", "text": "Wondering to get a love that is so pure" },
-    { "time": "1:21", "text": "Gotta have to always make sure" },
-    { "time": "1:25", "text": "That I'm not just somebody's pleasure" },
-    { "time": "1:29", "text": "I always pretending and lying" },
-    { "time": "1:36", "text": "I got used to feeling empty" },
-    { "time": "1:38", "text": "'Cause all I got is unhappy" },
-    { "time": "1:42", "text": "Happiness, can't I get happiness?" },
-    { "time": "1:47", "text": "I've never been enjoyin' my serenity" },
-    { "time": "1:52", "text": "Even if I've got a lot of company" },
-    { "time": "1:58", "text": "That makes me happy" },
-    { "time": "1:01", "text": "Soul try to figure it out" },
-    { "time": "1:05", "text": "From where I've been escapin'" },
-    { "time": "1:10", "text": "Running to end all the sin" },
-    { "time": "2:14", "text": "Get away from the pressure" },
-    { "time": "2:18", "text": "Wondering to get a love that is so pure" },
-    { "time": "2:26", "text": "Gotta have to always make sure" },
-    { "time": "2:30", "text": "That I'm not just somebody's pleasure" },
-    { "time": "2:36", "text": "" },
-    { "time": "2:43", "text": "It was in a blink of an eye" },
-    { "time": "2:47", "text": "Find a way how to say goodbye" },
-    { "time": "2:51", "text": "I've got to take me away" },
-    { "time": "2:55", "text": "From all sadness" },
-    { "time": "2:59", "text": "Stitch all my wounds, confess all the sins (confess all the sins)" },
-    { "time": "3:03", "text": "And took all my insecure" },
-    { "time": "3:07", "text": "When will I got the love that is so pure?" },
-    { "time": "3:15", "text": "Gotta have to always make sure" },
-    { "time": "3:20", "text": "That I'm not just somebody's pleasure" },
-    { "time": "3:27", "text": "Gotta have" },
-    { "time": "3:29", "text": "Gotta have to always make sure" },
-    { "time": "3:36", "text": "That I'm not just somebody's pleasure" }
+      { "time": "0:13", "text": "About what my heart actually say" },
+      { "time": "0:18", "text": "" },
+      {
+        "time": "0:23",
+        "text": "Stay awake while I'm drowning on my thoughts"
+      },
+      { "time": "0:30", "text": "Sometimes a happiness is just a happiness" },
+      { "time": "0:36", "text": "" },
+      { "time": "0:41", "text": "I've never been enjoyin' my serenity" },
+      { "time": "0:46", "text": "Even if I've got a lot of company" },
+      { "time": "0:52", "text": "That makes me happy" },
+      { "time": "0:55", "text": "Soul try to figure it out" },
+      { "time": "1:00", "text": "From where I've been escapin'" },
+      { "time": "1:04", "text": "Running to end all the sin" },
+      { "time": "1:08", "text": "Get away from the pressure" },
+      { "time": "1:12", "text": "Wondering to get a love that is so pure" },
+      { "time": "1:21", "text": "Gotta have to always make sure" },
+      { "time": "1:25", "text": "That I'm not just somebody's pleasure" },
+      { "time": "1:29", "text": "I always pretending and lying" },
+      { "time": "1:36", "text": "I got used to feeling empty" },
+      { "time": "1:38", "text": "'Cause all I got is unhappy" },
+      { "time": "1:42", "text": "Happiness, can't I get happiness?" },
+      { "time": "1:47", "text": "I've never been enjoyin' my serenity" },
+      { "time": "1:52", "text": "Even if I've got a lot of company" },
+      { "time": "1:58", "text": "That makes me happy" },
+      { "time": "1:01", "text": "Soul try to figure it out" },
+      { "time": "1:05", "text": "From where I've been escapin'" },
+      { "time": "1:10", "text": "Running to end all the sin" },
+      { "time": "2:14", "text": "Get away from the pressure" },
+      { "time": "2:18", "text": "Wondering to get a love that is so pure" },
+      { "time": "2:26", "text": "Gotta have to always make sure" },
+      { "time": "2:30", "text": "That I'm not just somebody's pleasure" },
+      { "time": "2:36", "text": "" },
+      { "time": "2:43", "text": "It was in a blink of an eye" },
+      { "time": "2:47", "text": "Find a way how to say goodbye" },
+      { "time": "2:51", "text": "I've got to take me away" },
+      { "time": "2:55", "text": "From all sadness" },
+      {
+        "time": "2:59",
+        "text": "Stitch all my wounds, confess all the sins (confess all the sins)"
+      },
+      { "time": "3:03", "text": "And took all my insecure" },
+      { "time": "3:07", "text": "When will I got the love that is so pure?" },
+      { "time": "3:15", "text": "Gotta have to always make sure" },
+      { "time": "3:20", "text": "That I'm not just somebody's pleasure" },
+      { "time": "3:27", "text": "Gotta have" },
+      { "time": "3:29", "text": "Gotta have to always make sure" },
+      { "time": "3:36", "text": "That I'm not just somebody's pleasure" }
+    ]
+  },
+  {
+    "title": "Apocalypse",
+    "file": "music/Apocalypse.mp3",
+    "lyrics": [
+      { "time": "0:00", "text": "" },
+      {
+        "time": "00:34",
+        "line": "You leapt from crumbling bridges, watching cityscapes turn to dust"
+      },
+      {
+        "time": "00:44",
+        "line": "Filming helicopters crashing in the ocean from way above"
+      },
+      { "time": "00:55", "line": "Got the music in you, baby, tell me why" },
+      { "time": "01:00", "line": "Got the music in you, baby, tell me why" },
+      {
+        "time": "01:05",
+        "line": "You've been locked in here forever, and you just can't say goodbye"
+      },
+      {"time": "01:16", "line": "Kisses on the foreheads of the lovers wrapped in your arms"},
+      {"time": "01:25", "line": "You've been hiding them in hollowed-out pianos left in the dark"},
+      { "time": "01:36", "line": "Got the music in you, baby, tell me why" },
+      { "time": "01:41", "line": "Got the music in you, baby, tell me why" },
+      { "time": "01:46", "line": "You've been locked in here forever, and you just can't say goodbye"},
+      { "time": "01:58", "line": "Your lips, my lips" },
+      { "time": "02:00", "line": "Apocalypse" },
+      { "time": "02:08", "line": "Your lips, my lips" },
+      { "time": "02:11", "line": "Apocalypse" },
+      { "time": "02:16", "line": "Go and sneak us through the rivers" },
+      { "time": "02:19", "line": "Flood is rising up on your knees" },
+      { "time": "02:24", "line": "Oh, please" },
+      { "time": "02:28", "line": "Come out and haunt me, I know you want me" },
+      { "time": "02:32", "line": "Come out and haunt me" },
+      {
+        "time": "02:37",
+        "line": "Sharing all your secrets with each other, since you were kids"
+      },
+      {
+        "time": "02:46",
+        "line": "Sleeping soundly with the locket that she gave you clutched in your fist"
+      },
+      { "time": "02:57", "line": "Got the music in you, baby, tell me why" },
+      { "time": "03:02", "line": "Got the music in you, baby, tell me why" },
+      {
+        "time": "03:07",
+        "line": "You've been locked in here forever, and you just can't say goodbye"
+      },
+      { "time": "03:14", "text": "" },
+      {
+        "time": "03:27",
+        "line": "You've been locked in here forever, and you just can't say goodbye"
+      },
+      { "time": "03:34", "text": "" },
+      { "time": "03:57", "line": "Oh, when you're all alone" },
+      { "time": "04:05", "line": "I will reach for you" },
+      { "time": "04:10", "line": "When you're feeling low" },
+      { "time": "04:15", "line": "I will be there too" }
+    ]
+  },
+  {
+    "title": "bad",
+    "file": "music/bad.mp3",
+    "lyrics": [
+        { "time": "00:02", "text": "How could my day be bad" },
+        { "time": "00:05", "text": "When I'm with you?" },
+        { "time": "00:07", "text": "You're the only one who makes me laugh" },
+        { "time": "00:14", "text": "So how can my day be bad?" },
+        { "time": "00:20", "text": "It's a day for you" },
+        { "time": "00:24", "text": "" },
+        { "time": "00:30", "text": "Lately, life's so boring" },
+        { "time": "00:36", "text": "I've been watching Netflix all day long" },
+        { "time": "00:42", "text": "I thought there would be" },
+        { "time": "00:45", "text": "No things left to watch" },
+        { "time": "00:48", "text": "So I let myself out" },
+        { "time": "00:58", "text": "When I went to the park" },
+        { "time": "01:03", "text": "I recognised you at a glance" },
+        { "time": "01:11", "text": "Face to face, we just smiled" },
+        {
+          "time": "01:16",
+          "text": "We already know that we'll be together (we'll be together)"
+        },
+        {
+          "time": "01:27",
+          "text": "How could my day be bad when I'm with you?"
+        },
+        { "time": "01:32", "text": "You're the only one who makes me laugh" },
+        { "time": "01:38", "text": "So how can my day be bad?" },
+        { "time": "01:45", "text": "It's a day for you" },
+        { "time": "01:50", "text": "Oh, babe" },
+        { "time": "01:56", "text": "Coffee in the morning, you and the sun" },
+        { "time": "02:03", "text": "There's a brown hue in your eyes" },
+        { "time": "02:11", "text": "How pretty it is" },
+        { "time": "02:13", "text": "I think I'm in love" },
+        { "time": "02:18", "text": "" },
+        { "time": "02:51", "text": "When I went to the park" },
+        { "time": "02:56", "text": "I recognised you at a glance" },
+        { "time": "03:04", "text": "Face to face, we smiled" },
+        { "time": "03:07", "text": "And" },
+        { "time": "03:08", "text": "I finallyyyyyy held your haaaaaands" },
+        {
+          "time": "03:16",
+          "text": "How could my day be bad when I'm with you?"
+        },
+        { "time": "03:22", "text": "You're the only one who makes me laugh" },
+        { "time": "03:28", "text": "So how can my day be bad?" },
+        { "time": "03:34", "text": "It's a day for you" },
+        { "time": "03:40", "text": "Oh, babe" },
+        {
+          "time": "03:45",
+          "text": "How could my day be bad when I'm with you?"
+        },
+        { "time": "03:50", "text": "You're the only one who gives me love" },
+        { "time": "03:56", "text": "So how can my day be bad?" },
+        { "time": "04:02", "text": "It's a day for you" },
+        { "time": "04:08", "text": "Oh, babe" }
+    ]
+  },
+  {
+    "title": "Consume (feat. Goon Des Garcons)",
+    "file": "music/Consume.mp3",
+    "lyrics": [
+      { "time": "00:07", "text": "I've been too busy, ignoring, and hiding" },
+      { "time": "00:13", "text": "About what my heart actually say" },
+      { "time": "00:18", "text": "" },
+      {
+        "time": "00:23",
+        "text": "Stay awake while I'm drowning on my thoughts"
+      },
+      { "time": "00:30", "text": "Sometimes a happiness is just a happiness" },
+      { "time": "00:36", "text": "" },
+      { "time": "00:41", "text": "I've never been enjoyin' my serenity" },
+      { "time": "00:46", "text": "Even if I've got a lot of company" },
+      { "time": "00:52", "text": "That makes me happy" },
+      { "time": "00:55", "text": "Soul try to figure it out" },
+      { "time": "01:00", "text": "From where I've been escapin'" },
+      { "time": "01:04", "text": "Running to end all the sin" },
+      { "time": "01:08", "text": "Get away from the pressure" },
+      { "time": "01:12", "text": "Wondering to get a love that is so pure" },
+      { "time": "01:21", "text": "Gotta have to always make sure" },
+      { "time": "01:25", "text": "That I'm not just somebody's pleasure" },
+      { "time": "01:29", "text": "I always pretending and lying" },
+      { "time": "01:36", "text": "I got used to feeling empty" },
+      { "time": "01:38", "text": "'Cause all I got is unhappy" },
+      { "time": "01:42", "text": "Happiness, can't I get happiness?" },
+      { "time": "01:47", "text": "I've never been enjoyin' my serenity" },
+      { "time": "01:52", "text": "Even if I've got a lot of company" },
+      { "time": "01:58", "text": "That makes me happy" },
+      { "time": "01:01", "text": "Soul try to figure it out" },
+      { "time": "01:05", "text": "From where I've been escapin'" },
+      { "time": "01:10", "text": "Running to end all the sin" },
+      { "time": "02:14", "text": "Get away from the pressure" },
+      { "time": "02:18", "text": "Wondering to get a love that is so pure" },
+      { "time": "02:26", "text": "Gotta have to always make sure" },
+      { "time": "02:30", "text": "That I'm not just somebody's pleasure" },
+      { "time": "02:36", "text": "" },
+      { "time": "02:43", "text": "It was in a blink of an eye" },
+      { "time": "02:47", "text": "Find a way how to say goodbye" },
+      { "time": "02:51", "text": "I've got to take me away" },
+      { "time": "02:55", "text": "From all sadness" },
+      {
+        "time": "02:59",
+        "text": "Stitch all my wounds, confess all the sins (confess all the sins)"
+      },
+      { "time": "03:03", "text": "And took all my insecure" },
+      { "time": "03:07", "text": "When will I got the love that is so pure?" },
+      { "time": "03:15", "text": "Gotta have to always make sure" },
+      { "time": "03:20", "text": "That I'm not just somebody's pleasure" },
+      { "time": "03:27", "text": "Gotta have" },
+      { "time": "03:29", "text": "Gotta have to always make sure" },
+      { "time": "03:36", "text": "That I'm not just somebody's pleasure" }
+    ]
+  },
+  {
+    "title": "Sweet",
+    "file": "music/Sweet.mp3",
+    "lyrics": [
+  { "time": "00:00", "text": "Watching the video where you're lying" },
+  { "time": "00:10", "text": "In your red lingerie ten times nightly" },
+  { "time": "00:20", "text": "You know I think your skin's the perfect color" },
+  { "time": "00:30", "text": "But it's always your eyes that pull me under" },
+  { "time": "00:40", "text": "It's so sweet knowing that you love me" },
+  { "time": "00:50", "text": "Though we don't need to say it to each other, sweet" },
+  { "time": "00:59", "text": "Knowing that I love you, and running my fingers through your hair" },
+  { "time": "01:09", "text": "It's so sweet" },
+  { "time": "01:12", "text": "" },
+  { "time": "01:34", "text": "And I would gladly break it" },
+  { "time": "01:37", "text": "I would gladly break my heart for you" },
+  { "time": "01:44", "text": "And I would gladly break it" },
+  { "time": "01:47", "text": "I would gladly break my heart for you" },
+  { "time": "01:54", "text": "And I would gladly break it" },
+  { "time": "01:57", "text": "I would gladly break my heart for you" },
+  { "time": "02:04", "text": "And I would gladly break it" },
+  { "time": "02:07", "text": "I would gladly break my heart for you" },
+  { "time": "02:13", "text": "It's so sweet" }
+]
+  },
+  {
+    "title": "Cry",
+    "file": "music/Cry.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
+    ]
+  },
+  {
+    "title": "Friends",
+    "file": "music/Friends.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
+    ]
+  },
+  {
+    "title": "Let the World burn",
+    "file": "music/Let the World Burn.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
+    ]
+  },
+  {
+    "title": "love.",
+    "file": "music/love.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
+    ]
+  },
+  {
+    "title": "Meddle About",
+    "file": "music/Meddle About.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
+    ]
+  },
+  {
+    "title": "Sunsetz",
+    "file": "music/Sunsetz.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
+    ]
+  },
+  {
+    "title": "Mind Games",
+    "file": "music/Mind Games.mp3",
+    "lyrics": [
+      { "time": "00:00", "text": "" }
     ]
   }
 ]
