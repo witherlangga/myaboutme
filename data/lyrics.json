@@ -94,178 +94,201 @@
     "file": "music/Apocalypse.mp3",
     "lyrics": [
       { "time": "00:00", "text": "" },
-      { "time": "00:34","line": "You leapt from crumbling bridges, watching cityscapes turn to dust"},
-      { "time": "00:44","line": "Filming helicopters crashing in the ocean from way above"},
-      { "time": "00:55", "line": "Got the music in you, baby, tell me why" },
-      { "time": "01:00", "line": "Got the music in you, baby, tell me why" },
-      { "time": "01:05", "line": "You've been locked in here forever, and you just can't say goodbye"},
-      { "time": "01:16", "line": "Kisses on the foreheads of the lovers wrapped in your arms"},
-      { "time": "01:25", "line": "You've been hiding them in hollowed-out pianos left in the dark"},
-      { "time": "01:36", "line": "Got the music in you, baby, tell me why" },
-      { "time": "01:41", "line": "Got the music in you, baby, tell me why" },
-      { "time": "01:46", "line": "You've been locked in here forever, and you just can't say goodbye"},
-      { "time": "01:58", "line": "Your lips, my lips" },
-      { "time": "02:00", "line": "Apocalypse" },
-      { "time": "02:08", "line": "Your lips, my lips" },
-      { "time": "02:11", "line": "Apocalypse" },
-      { "time": "02:16", "line": "Go and sneak us through the rivers" },
-      { "time": "02:19", "line": "Flood is rising up on your knees" },
-      { "time": "02:24", "line": "Oh, please" },
-      { "time": "02:28", "line": "Come out and haunt me, I know you want me" },
-      { "time": "02:32", "line": "Come out and haunt me" },
-      { "time": "02:37", "line": "Sharing all your secrets with each other, since you were kids"},
-      { "time": "02:46", "line": "Sleeping soundly with the locket that she gave you clutched in your fist"},
-      { "time": "02:57", "line": "Got the music in you, baby, tell me why" },
-      { "time": "03:02", "line": "Got the music in you, baby, tell me why" },
-      { "time": "03:07", "line": "You've been locked in here forever, and you just can't say goodbye"},
+      {
+        "time": "00:34",
+        "text": "You leapt from crumbling bridges, watching cityscapes turn to dust"
+      },
+      {
+        "time": "00:44",
+        "text": "Filming helicopters crashing in the ocean from way above"
+      },
+      { "time": "00:55", "text": "Got the music in you, baby, tell me why" },
+      { "time": "01:00", "text": "Got the music in you, baby, tell me why" },
+      {
+        "time": "01:05",
+        "text": "You've been locked in here forever, and you just can't say goodbye"
+      },
+      {
+        "time": "01:16",
+        "text": "Kisses on the foreheads of the lovers wrapped in your arms"
+      },
+      {
+        "time": "01:25",
+        "text": "You've been hiding them in hollowed-out pianos left in the dark"
+      },
+      { "time": "01:36", "text": "Got the music in you, baby, tell me why" },
+      { "time": "01:41", "text": "Got the music in you, baby, tell me why" },
+      {
+        "time": "01:46",
+        "text": "You've been locked in here forever, and you just can't say goodbye"
+      },
+      { "time": "01:58", "text": "Your lips, my lips" },
+      { "time": "02:00", "text": "Apocalypse" },
+      { "time": "02:08", "text": "Your lips, my lips" },
+      { "time": "02:11", "text": "Apocalypse" },
+      { "time": "02:16", "text": "Go and sneak us through the rivers" },
+      { "time": "02:19", "text": "Flood is rising up on your knees" },
+      { "time": "02:24", "text": "Oh, please" },
+      { "time": "02:28", "text": "Come out and haunt me, I know you want me" },
+      { "time": "02:32", "text": "Come out and haunt me" },
+      {
+        "time": "02:37",
+        "text": "Sharing all your secrets with each other, since you were kids"
+      },
+      {
+        "time": "02:46",
+        "text": "Sleeping soundly with the locket that she gave you clutched in your fist"
+      },
+      { "time": "02:57", "text": "Got the music in you, baby, tell me why" },
+      { "time": "03:02", "text": "Got the music in you, baby, tell me why" },
+      {
+        "time": "03:07",
+        "text": "You've been locked in here forever, and you just can't say goodbye"
+      },
       { "time": "03:14", "text": "" },
       {
         "time": "03:27",
-        "line": "You've been locked in here forever, and you just can't say goodbye"
+        "text": "You've been locked in here forever, and you just can't say goodbye"
       },
       { "time": "03:34", "text": "" },
-      { "time": "03:57", "line": "Oh, when you're all alone" },
-      { "time": "04:05", "line": "I will reach for you" },
-      { "time": "04:10", "line": "When you're feeling low" },
-      { "time": "04:15", "line": "I will be there too" }
+      { "time": "03:57", "text": "Oh, when you're all alone" },
+      { "time": "04:05", "text": "I will reach for you" },
+      { "time": "04:10", "text": "When you're feeling low" },
+      { "time": "04:15", "text": "I will be there too" }
     ]
   },
   {
     "title": "bad",
     "file": "music/bad.mp3",
     "lyrics": [
-        { "time": "00:02", "text": "How could my day be bad" },
-        { "time": "00:05", "text": "When I'm with you?" },
-        { "time": "00:07", "text": "You're the only one who makes me laugh" },
-        { "time": "00:14", "text": "So how can my day be bad?" },
-        { "time": "00:20", "text": "It's a day for you" },
-        { "time": "00:24", "text": "" },
-        { "time": "00:30", "text": "Lately, life's so boring" },
-        { "time": "00:36", "text": "I've been watching Netflix all day long" },
-        { "time": "00:42", "text": "I thought there would be" },
-        { "time": "00:45", "text": "No things left to watch" },
-        { "time": "00:48", "text": "So I let myself out" },
-        { "time": "00:58", "text": "When I went to the park" },
-        { "time": "01:03", "text": "I recognised you at a glance" },
-        { "time": "01:11", "text": "Face to face, we just smiled" },
-        {
-          "time": "01:16",
-          "text": "We already know that we'll be together (we'll be together)"
-        },
-        {
-          "time": "01:27",
-          "text": "How could my day be bad when I'm with you?"
-        },
-        { "time": "01:32", "text": "You're the only one who makes me laugh" },
-        { "time": "01:38", "text": "So how can my day be bad?" },
-        { "time": "01:45", "text": "It's a day for you" },
-        { "time": "01:50", "text": "Oh, babe" },
-        { "time": "01:56", "text": "Coffee in the morning, you and the sun" },
-        { "time": "02:03", "text": "There's a brown hue in your eyes" },
-        { "time": "02:11", "text": "How pretty it is" },
-        { "time": "02:13", "text": "I think I'm in love" },
-        { "time": "02:18", "text": "" },
-        { "time": "02:51", "text": "When I went to the park" },
-        { "time": "02:56", "text": "I recognised you at a glance" },
-        { "time": "03:04", "text": "Face to face, we smiled" },
-        { "time": "03:07", "text": "And" },
-        { "time": "03:08", "text": "I finallyyyyyy held your haaaaaands" },
-        {
-          "time": "03:16",
-          "text": "How could my day be bad when I'm with you?"
-        },
-        { "time": "03:22", "text": "You're the only one who makes me laugh" },
-        { "time": "03:28", "text": "So how can my day be bad?" },
-        { "time": "03:34", "text": "It's a day for you" },
-        { "time": "03:40", "text": "Oh, babe" },
-        {
-          "time": "03:45",
-          "text": "How could my day be bad when I'm with you?"
-        },
-        { "time": "03:50", "text": "You're the only one who gives me love" },
-        { "time": "03:56", "text": "So how can my day be bad?" },
-        { "time": "04:02", "text": "It's a day for you" },
-        { "time": "04:08", "text": "Oh, babe" }
+      { "time": "00:02", "text": "How could my day be bad" },
+      { "time": "00:05", "text": "When I'm with you?" },
+      { "time": "00:07", "text": "You're the only one who makes me laugh" },
+      { "time": "00:14", "text": "So how can my day be bad?" },
+      { "time": "00:20", "text": "It's a day for you" },
+      { "time": "00:24", "text": "" },
+      { "time": "00:30", "text": "Lately, life's so boring" },
+      { "time": "00:36", "text": "I've been watching Netflix all day long" },
+      { "time": "00:42", "text": "I thought there would be" },
+      { "time": "00:45", "text": "No things left to watch" },
+      { "time": "00:48", "text": "So I let myself out" },
+      { "time": "00:58", "text": "When I went to the park" },
+      { "time": "01:03", "text": "I recognised you at a glance" },
+      { "time": "01:11", "text": "Face to face, we just smiled" },
+      {
+        "time": "01:16",
+        "text": "We already know that we'll be together (we'll be together)"
+      },
+      {
+        "time": "01:27",
+        "text": "How could my day be bad when I'm with you?"
+      },
+      { "time": "01:32", "text": "You're the only one who makes me laugh" },
+      { "time": "01:38", "text": "So how can my day be bad?" },
+      { "time": "01:45", "text": "It's a day for you" },
+      { "time": "01:50", "text": "Oh, babe" },
+      { "time": "01:56", "text": "Coffee in the morning, you and the sun" },
+      { "time": "02:03", "text": "There's a brown hue in your eyes" },
+      { "time": "02:11", "text": "How pretty it is" },
+      { "time": "02:13", "text": "I think I'm in love" },
+      { "time": "02:18", "text": "" },
+      { "time": "02:51", "text": "When I went to the park" },
+      { "time": "02:56", "text": "I recognised you at a glance" },
+      { "time": "03:04", "text": "Face to face, we smiled" },
+      { "time": "03:07", "text": "And" },
+      { "time": "03:08", "text": "I finallyyyyyy held your haaaaaands" },
+      {
+        "time": "03:16",
+        "text": "How could my day be bad when I'm with you?"
+      },
+      { "time": "03:22", "text": "You're the only one who makes me laugh" },
+      { "time": "03:28", "text": "So how can my day be bad?" },
+      { "time": "03:34", "text": "It's a day for you" },
+      { "time": "03:40", "text": "Oh, babe" },
+      {
+        "time": "03:45",
+        "text": "How could my day be bad when I'm with you?"
+      },
+      { "time": "03:50", "text": "You're the only one who gives me love" },
+      { "time": "03:56", "text": "So how can my day be bad?" },
+      { "time": "04:02", "text": "It's a day for you" },
+      { "time": "04:08", "text": "Oh, babe" }
     ]
   },
   {
     "title": "Consume (feat. Goon Des Garcons)",
     "file": "music/Consume.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "Sweet",
     "file": "music/Sweet.mp3",
     "lyrics": [
-  { "time": "00:00", "text": "Watching the video where you're lying" },
-  { "time": "00:10", "text": "In your red lingerie ten times nightly" },
-  { "time": "00:20", "text": "You know I think your skin's the perfect color" },
-  { "time": "00:30", "text": "But it's always your eyes that pull me under" },
-  { "time": "00:40", "text": "It's so sweet knowing that you love me" },
-  { "time": "00:50", "text": "Though we don't need to say it to each other, sweet" },
-  { "time": "00:59", "text": "Knowing that I love you, and running my fingers through your hair" },
-  { "time": "01:09", "text": "It's so sweet" },
-  { "time": "01:12", "text": "" },
-  { "time": "01:34", "text": "And I would gladly break it" },
-  { "time": "01:37", "text": "I would gladly break my heart for you" },
-  { "time": "01:44", "text": "And I would gladly break it" },
-  { "time": "01:47", "text": "I would gladly break my heart for you" },
-  { "time": "01:54", "text": "And I would gladly break it" },
-  { "time": "01:57", "text": "I would gladly break my heart for you" },
-  { "time": "02:04", "text": "And I would gladly break it" },
-  { "time": "02:07", "text": "I would gladly break my heart for you" },
-  { "time": "02:13", "text": "It's so sweet" }
-]
+      { "time": "00:00", "text": "Watching the video where you're lying" },
+      { "time": "00:10", "text": "In your red lingerie ten times nightly" },
+      {
+        "time": "00:20",
+        "text": "You know I think your skin's the perfect color"
+      },
+      {
+        "time": "00:30",
+        "text": "But it's always your eyes that pull me under"
+      },
+      { "time": "00:40", "text": "It's so sweet knowing that you love me" },
+      {
+        "time": "00:50",
+        "text": "Though we don't need to say it to each other, sweet"
+      },
+      {
+        "time": "00:59",
+        "text": "Knowing that I love you, and running my fingers through your hair"
+      },
+      { "time": "01:09", "text": "It's so sweet" },
+      { "time": "01:12", "text": "" },
+      { "time": "01:34", "text": "And I would gladly break it" },
+      { "time": "01:37", "text": "I would gladly break my heart for you" },
+      { "time": "01:44", "text": "And I would gladly break it" },
+      { "time": "01:47", "text": "I would gladly break my heart for you" },
+      { "time": "01:54", "text": "And I would gladly break it" },
+      { "time": "01:57", "text": "I would gladly break my heart for you" },
+      { "time": "02:04", "text": "And I would gladly break it" },
+      { "time": "02:07", "text": "I would gladly break my heart for you" },
+      { "time": "02:13", "text": "It's so sweet" }
+    ]
   },
   {
     "title": "Cry",
     "file": "music/Cry.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "Friends",
     "file": "music/Friends.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "Let the World burn",
     "file": "music/Let the World Burn.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "love.",
     "file": "music/love.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "Meddle About",
     "file": "music/Meddle About.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "Sunsetz",
     "file": "music/Sunsetz.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   },
   {
     "title": "Mind Games",
     "file": "music/Mind Games.mp3",
-    "lyrics": [
-      { "time": "00:00", "text": "" }
-    ]
+    "lyrics": [{ "time": "00:00", "text": "" }]
   }
 ]
