@@ -93,23 +93,14 @@
     "title": "Apocalypse",
     "file": "music/Apocalypse.mp3",
     "lyrics": [
-      { "time": "0:00", "text": "" },
-      {
-        "time": "00:34",
-        "line": "You leapt from crumbling bridges, watching cityscapes turn to dust"
-      },
-      {
-        "time": "00:44",
-        "line": "Filming helicopters crashing in the ocean from way above"
-      },
+      { "time": "00:00", "text": "" },
+      { "time": "00:34","line": "You leapt from crumbling bridges, watching cityscapes turn to dust"},
+      { "time": "00:44","line": "Filming helicopters crashing in the ocean from way above"},
       { "time": "00:55", "line": "Got the music in you, baby, tell me why" },
       { "time": "01:00", "line": "Got the music in you, baby, tell me why" },
-      {
-        "time": "01:05",
-        "line": "You've been locked in here forever, and you just can't say goodbye"
-      },
-      {"time": "01:16", "line": "Kisses on the foreheads of the lovers wrapped in your arms"},
-      {"time": "01:25", "line": "You've been hiding them in hollowed-out pianos left in the dark"},
+      { "time": "01:05", "line": "You've been locked in here forever, and you just can't say goodbye"},
+      { "time": "01:16", "line": "Kisses on the foreheads of the lovers wrapped in your arms"},
+      { "time": "01:25", "line": "You've been hiding them in hollowed-out pianos left in the dark"},
       { "time": "01:36", "line": "Got the music in you, baby, tell me why" },
       { "time": "01:41", "line": "Got the music in you, baby, tell me why" },
       { "time": "01:46", "line": "You've been locked in here forever, and you just can't say goodbye"},
@@ -122,20 +113,11 @@
       { "time": "02:24", "line": "Oh, please" },
       { "time": "02:28", "line": "Come out and haunt me, I know you want me" },
       { "time": "02:32", "line": "Come out and haunt me" },
-      {
-        "time": "02:37",
-        "line": "Sharing all your secrets with each other, since you were kids"
-      },
-      {
-        "time": "02:46",
-        "line": "Sleeping soundly with the locket that she gave you clutched in your fist"
-      },
+      { "time": "02:37", "line": "Sharing all your secrets with each other, since you were kids"},
+      { "time": "02:46", "line": "Sleeping soundly with the locket that she gave you clutched in your fist"},
       { "time": "02:57", "line": "Got the music in you, baby, tell me why" },
       { "time": "03:02", "line": "Got the music in you, baby, tell me why" },
-      {
-        "time": "03:07",
-        "line": "You've been locked in here forever, and you just can't say goodbye"
-      },
+      { "time": "03:07", "line": "You've been locked in here forever, and you just can't say goodbye"},
       { "time": "03:14", "text": "" },
       {
         "time": "03:27",
@@ -210,55 +192,7 @@
     "title": "Consume (feat. Goon Des Garcons)",
     "file": "music/Consume.mp3",
     "lyrics": [
-      { "time": "00:07", "text": "I've been too busy, ignoring, and hiding" },
-      { "time": "00:13", "text": "About what my heart actually say" },
-      { "time": "00:18", "text": "" },
-      {
-        "time": "00:23",
-        "text": "Stay awake while I'm drowning on my thoughts"
-      },
-      { "time": "00:30", "text": "Sometimes a happiness is just a happiness" },
-      { "time": "00:36", "text": "" },
-      { "time": "00:41", "text": "I've never been enjoyin' my serenity" },
-      { "time": "00:46", "text": "Even if I've got a lot of company" },
-      { "time": "00:52", "text": "That makes me happy" },
-      { "time": "00:55", "text": "Soul try to figure it out" },
-      { "time": "01:00", "text": "From where I've been escapin'" },
-      { "time": "01:04", "text": "Running to end all the sin" },
-      { "time": "01:08", "text": "Get away from the pressure" },
-      { "time": "01:12", "text": "Wondering to get a love that is so pure" },
-      { "time": "01:21", "text": "Gotta have to always make sure" },
-      { "time": "01:25", "text": "That I'm not just somebody's pleasure" },
-      { "time": "01:29", "text": "I always pretending and lying" },
-      { "time": "01:36", "text": "I got used to feeling empty" },
-      { "time": "01:38", "text": "'Cause all I got is unhappy" },
-      { "time": "01:42", "text": "Happiness, can't I get happiness?" },
-      { "time": "01:47", "text": "I've never been enjoyin' my serenity" },
-      { "time": "01:52", "text": "Even if I've got a lot of company" },
-      { "time": "01:58", "text": "That makes me happy" },
-      { "time": "01:01", "text": "Soul try to figure it out" },
-      { "time": "01:05", "text": "From where I've been escapin'" },
-      { "time": "01:10", "text": "Running to end all the sin" },
-      { "time": "02:14", "text": "Get away from the pressure" },
-      { "time": "02:18", "text": "Wondering to get a love that is so pure" },
-      { "time": "02:26", "text": "Gotta have to always make sure" },
-      { "time": "02:30", "text": "That I'm not just somebody's pleasure" },
-      { "time": "02:36", "text": "" },
-      { "time": "02:43", "text": "It was in a blink of an eye" },
-      { "time": "02:47", "text": "Find a way how to say goodbye" },
-      { "time": "02:51", "text": "I've got to take me away" },
-      { "time": "02:55", "text": "From all sadness" },
-      {
-        "time": "02:59",
-        "text": "Stitch all my wounds, confess all the sins (confess all the sins)"
-      },
-      { "time": "03:03", "text": "And took all my insecure" },
-      { "time": "03:07", "text": "When will I got the love that is so pure?" },
-      { "time": "03:15", "text": "Gotta have to always make sure" },
-      { "time": "03:20", "text": "That I'm not just somebody's pleasure" },
-      { "time": "03:27", "text": "Gotta have" },
-      { "time": "03:29", "text": "Gotta have to always make sure" },
-      { "time": "03:36", "text": "That I'm not just somebody's pleasure" }
+      { "time": "00:00", "text": "" }
     ]
   },
   {
