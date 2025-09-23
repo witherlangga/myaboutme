@@ -550,7 +550,7 @@
     ]
   },
   {
-    "title": "love.",
+    "title": "love",
     "file": "music/love.mp3",
     "lyrics": [
       { "time": "00:00", "text": "" },
@@ -773,3 +773,4 @@
     ]
   }
 ]
+
