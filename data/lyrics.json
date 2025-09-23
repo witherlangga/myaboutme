@@ -559,7 +559,7 @@
       { "time": "00:41", "text": "Gakjaui yeomwoni baraego" },
       { "time": "00:51", "text": "Deotchildoeeo" },
       { "time": "00:55", "text": "" },
-      { "time": "00:00", "text": "Bari daeul mankeum gudeojimyeon" },
+      { "time": "01:00", "text": "Bari daeul mankeum gudeojimyeon" },
       { "time": "01:15", "text": "Biroso nae sesangi doeeojwo" },
       { "time": "01:33", "text": "" },
       { "time": "01:35", "text": "Naui jageun maeumdo" },
@@ -773,4 +773,5 @@
     ]
   }
 ]
+
 
