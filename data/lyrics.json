@@ -219,8 +219,7 @@
     "title": "Consume (feat. Goon Des Garcons)",
     "file": "music/Consume.mp3",
     "lyrics": [
-      { "time": "00:01", "text": "本当は私気づいてたんです" },
-      { "time": "00:04", "text": "あなたが私を見ていてくれたこと" },
+      { "time": "00:01", "text": "..." },
       { "time": "00:14", "text": "Alright, alright, whoa" },
       { "time": "00:16", "text": "Why you pointing at me with that knife?" },
       {
@@ -527,9 +526,9 @@
     "file": "music/Let the World Burn.mp3",
     "lyrics": [
       { "time": "00:00", "text": "" },
-      { "time": "00:04", "text": "Lost in the fog" },
-      { "time": "00:09", "text": "I fear that there's still further to fall" },
-      { "time": "00:14", "text": "It's dangerous 'cause I want it all" },
+      { "time": "00:05", "text": "Lost in the fog" },
+      { "time": "00:08", "text": "I fear that there's still further to fall" },
+      { "time": "00:13", "text": "It's dangerous 'cause I want it all" },
       { "time": "00:19", "text": "And I don't think I care what it costs" },
       { "time": "00:24", "text": "I shouldn't have fallen in love" },
       { "time": "00:27", "text": "Look what it made me become" },
@@ -733,10 +732,10 @@
     "lyrics": [
       { "time": "00:00", "text": "" },
       { "time": "00:23", "text": "Touch my body tender" },
-      { "time": "00:28", "text": "'Cause the feeling makes me weak" },
+      { "time": "00:27", "text": "'Cause the feeling makes me weak" },
       { "time": "00:33", "text": "Kicking off the covers" },
       {
-        "time": "00:38",
+        "time": "00:37",
         "text": "I see the ceiling, while you're looking down at me"
       },
       { "time": "00:44", "text": "How can we go back to being friends" },
