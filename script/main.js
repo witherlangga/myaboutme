@@ -63,9 +63,8 @@ function playRandomSong() {
       audio.src = song.file;
 
       // Coba autoplay, jika gagal munculkan tombol manual
-      audio.play().catch(() => {
-        console.warn("Autoplay diblokir oleh browser.");
-        showManualPlayButton(audio, lyricsContainer);
+      audio.play().catch((err) => {
+        console.warn("Autoplay diblokir oleh browser:", err);
       });
 
       loadLyrics(audio, song.lyrics);
@@ -99,37 +98,4 @@ function loadLyrics(audio, lyricsData) {
   audio.addEventListener("ended", () => {
     backBtn.classList.add("show");
   });
-}
-
-/* =====================
-   TOMBOL JIKA AUTOPLAY GAGAL
-===================== */
-function showManualPlayButton(audio, container) {
-  const manualBtn = document.createElement("button");
-  manualBtn.textContent = "▶️ Putar Lagu";
-  manualBtn.style.padding = "10px 22px";
-  manualBtn.style.fontSize = "15px";
-  manualBtn.style.marginTop = "30px";
-  manualBtn.style.background = "#800020";
-  manualBtn.style.color = "#fff";
-  manualBtn.style.border = "none";
-  manualBtn.style.borderRadius = "8px";
-  manualBtn.style.cursor = "pointer";
-  manualBtn.style.transition = "0.3s";
-  manualBtn.style.boxShadow = "0 3px 8px rgba(0,0,0,0.2)";
-
-  manualBtn.addEventListener("mouseenter", () => {
-    manualBtn.style.background = "#a0333f";
-  });
-
-  manualBtn.addEventListener("mouseleave", () => {
-    manualBtn.style.background = "#800020";
-  });
-
-  manualBtn.addEventListener("click", () => {
-    audio.play();
-    manualBtn.remove(); // hilangkan tombol setelah diklik
-  });
-
-  container.appendChild(manualBtn);
 }
