@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
 
   if (savedSong) {
     const song = JSON.parse(savedSong);
-    prepareAutoplay(() => playSelectedSong(song));
+    playSelectedSong(song);
     localStorage.removeItem("selectedSong");
   } else {
     Swal.fire({
@@ -16,47 +16,36 @@ window.addEventListener("load", () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        prepareAutoplay(() => playRandomSong());
+        playRandomSong();
       }
     });
   }
 });
 
-/* === fungsi untuk parsing waktu dari lirik === */
 function parseTime(t) {
   const parts = t.split(":").map(Number);
   return parts[0] * 60 + parts[1];
 }
 
-/* === trik untuk memastikan autoplay berhasil === */
-function prepareAutoplay(callback) {
-  const audio = document.querySelector(".song");
-
-  // Langsung coba jalanin
-  callback();
-
-  // Kalau autoplay diblokir, tunggu gesture pertama
-  const resumeAudio = () => {
-    if (audio.paused) {
-      audio.play().catch(() => {});
-    }
-    document.removeEventListener("click", resumeAudio);
-    document.removeEventListener("touchstart", resumeAudio);
-  };
-
-  document.addEventListener("click", resumeAudio);
-  document.addEventListener("touchstart", resumeAudio);
-}
-
-/* === fungsi utama pemutar lagu === */
+/* =====================
+   FUNGSI MAIN PLAYER
+===================== */
 function playSelectedSong(song) {
   fetch("data/lyrics.json")
     .then((response) => response.json())
     .then((allSongs) => {
       const found = allSongs.find((s) => s.file === song.file);
       const audio = document.querySelector(".song");
+      const lyricsContainer = document.getElementById("lyrics");
+
       audio.src = song.file;
-      audio.play().catch(() => {}); // diamkan error autoplay
+
+      // Coba autoplay, jika gagal munculkan tombol manual
+      audio.play().catch(() => {
+        console.warn("Autoplay diblokir oleh browser.");
+        showManualPlayButton(audio, lyricsContainer);
+      });
+
       if (found) loadLyrics(audio, found.lyrics);
     })
     .catch((err) => console.error("Gagal memuat data lagu:", err));
@@ -69,14 +58,24 @@ function playRandomSong() {
       const randomIndex = Math.floor(Math.random() * allSongs.length);
       const song = allSongs[randomIndex];
       const audio = document.querySelector(".song");
+      const lyricsContainer = document.getElementById("lyrics");
+
       audio.src = song.file;
-      audio.play().catch(() => {}); // diamkan error autoplay
+
+      // Coba autoplay, jika gagal munculkan tombol manual
+      audio.play().catch(() => {
+        console.warn("Autoplay diblokir oleh browser.");
+        showManualPlayButton(audio, lyricsContainer);
+      });
+
       loadLyrics(audio, song.lyrics);
     })
     .catch((err) => console.error("Gagal memuat data lagu:", err));
 }
 
-/* === fungsi sinkronisasi lirik === */
+/* =====================
+   FUNGSI TAMBAHAN
+===================== */
 function loadLyrics(audio, lyricsData) {
   const lyricsContainer = document.getElementById("lyrics");
   const backBtn = document.getElementById("backBtn");
@@ -92,7 +91,7 @@ function loadLyrics(audio, lyricsData) {
     if (line) {
       lyricsContainer.textContent = line.text;
       lyricsContainer.style.display = "none";
-      void lyricsContainer.offsetHeight;
+      void lyricsContainer.offsetHeight; // reset animasi
       lyricsContainer.style.display = "flex";
     }
   });
@@ -100,4 +99,37 @@ function loadLyrics(audio, lyricsData) {
   audio.addEventListener("ended", () => {
     backBtn.classList.add("show");
   });
+}
+
+/* =====================
+   TOMBOL JIKA AUTOPLAY GAGAL
+===================== */
+function showManualPlayButton(audio, container) {
+  const manualBtn = document.createElement("button");
+  manualBtn.textContent = "▶️ Putar Lagu";
+  manualBtn.style.padding = "10px 22px";
+  manualBtn.style.fontSize = "15px";
+  manualBtn.style.marginTop = "30px";
+  manualBtn.style.background = "#800020";
+  manualBtn.style.color = "#fff";
+  manualBtn.style.border = "none";
+  manualBtn.style.borderRadius = "8px";
+  manualBtn.style.cursor = "pointer";
+  manualBtn.style.transition = "0.3s";
+  manualBtn.style.boxShadow = "0 3px 8px rgba(0,0,0,0.2)";
+
+  manualBtn.addEventListener("mouseenter", () => {
+    manualBtn.style.background = "#a0333f";
+  });
+
+  manualBtn.addEventListener("mouseleave", () => {
+    manualBtn.style.background = "#800020";
+  });
+
+  manualBtn.addEventListener("click", () => {
+    audio.play();
+    manualBtn.remove(); // hilangkan tombol setelah diklik
+  });
+
+  container.appendChild(manualBtn);
 }
