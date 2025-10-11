@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Tarot</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styleindex.css" />
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        overflow-x: hidden;
+      }
+
+      .contain-tarot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 60px;
+        padding: 120px 60px;
+      }
+
+      .tarot-img {
+        width: 300px;
+        height: 480px;
+        border-radius: 20px;
+        background: url("tarots/Fool.webp") center/cover no-repeat;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        transition: transform 1s ease, box-shadow 0.5s ease;
+        transform-style: preserve-3d;
+        position: relative;
+        perspective: 1000px;
+        overflow: hidden; /* glow tetap di dalam kartu */
+      }
+
+      .tarot-img.flipping {
+        animation: flipCard 2s ease-in-out forwards;
+      }
+
+      @keyframes flipCard {
+        0% {
+          transform: rotateY(0deg) scale(1);
+          box-shadow: 0 0 20px rgba(128, 0, 32, 0.3);
+        }
+        40% {
+          transform: rotateY(180deg) scale(1.05);
+          box-shadow: 0 0 35px rgba(128, 0, 32, 0.5);
+        }
+        70% {
+          transform: rotateY(360deg) scale(1);
+          box-shadow: 0 0 25px rgba(128, 0, 32, 0.4);
+        }
+        100% {
+          transform: rotateY(360deg) scale(1);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      .tarot-img::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        background: radial-gradient(
+          circle at center,
+          rgba(128, 0, 32, 0.25),
+          rgba(128, 0, 32, 0) 70%
+        );
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        mix-blend-mode: screen;
+      }
+
+      .tarot-img.glow::after {
+        opacity: 1;
+        animation: pulseGlow 2s infinite;
+      }
+
+      @keyframes pulseGlow {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+
+      .tarot-text {
+        max-width: 600px;
+      }
+
+      .tarot-text h2 {
+        color: #800020;
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+
+      .tarot-text h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .tarot-desc {
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.7;
+        color: #000000;
+        font-size: 15px;
+        margin-bottom: 25px;
+        min-height: 120px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .tarot-desc.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Tombol diperbagus */
+      .draw-btn {
+        border: none;
+        background: linear-gradient(135deg, #800020, #a0002a);
+        color: #fff;
+        padding: 14px 36px;
+        border-radius: 4px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(128, 0, 32, 0.35);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .draw-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0)
+        );
+        transition: all 0.5s;
+      }
+
+      .draw-btn:hover::before {
+        left: 100%;
+      }
+
+      .draw-btn:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(128, 0, 32, 0.45);
+      }
+
+      .draw-btn:active {
+        transform: scale(0.97);
+      }
+
+      @media (max-width: 768px) {
+        .contain-tarot {
+          flex-direction: column;
+          text-align: center;
+          padding: 100px 20px;
+        }
+        .tarot-text {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#aboutme">About</a>
+        <a href="#learn">Learn</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="contain-tarot">
+      <div class="tarot-img" id="tarotCard"></div>
+
+      <div class="tarot-text">
+        <h2>YOUR TAROT</h2>
+        <h1 id="tarotTitle">Discover the Path Within</h1>
+        <p id="tarotDesc" class="tarot-desc show">
+          Each tarot holds a fragment of your reflection — a whisper of your
+          soul’s movement through the unseen. What you draw today is not fate,
+          but a mirror of where your heart stands.
+        </p>
+        <button class="draw-btn" onclick="drawCard()">Draw</button>
+      </div>
+    </div>
+
+    <script>
+      const tarotCards = [
+        {
+          name: "Abyss",
+          desc: "In the deepest silence, everything begins and ends within itself. Desire twists into reflection, and corruption hides beneath the mask of yearning. The Abyss consumes what is false so that something truer may emerge.",
+        },
+        {
+          name: "Black Emperor",
+          desc: "The hand that governs order and chaos alike moves with quiet certainty. Control is a crown of thorns — heavy, necessary, and merciless. Beneath discipline lies the fear of what might rise if power ever sleeps.",
+        },
+        {
+          name: "Chained",
+          desc: "Freedom is an illusion polished into comfort. The Chained speaks of invisible bonds — not of steel, but of longing, guilt, and quiet surrender. What is held too tightly eventually becomes the jailer.",
+        },
+        {
+          name: "Darkness",
+          desc: "Light is a fragile thing within endless night. The Darkness does not destroy; it unveils what light could never show. It teaches that what is unseen is not always to be feared, but understood.",
+        },
+        {
+          name: "Death",
+          desc: "Not the end, but the unmaking of form. Death reshapes what once was, scattering it into the fertile ground of becoming. Its quiet grace erases names yet preserves essence.",
+        },
+        {
+          name: "Demoness",
+          desc: "Beauty cloaks calamity, and desire dances with ruin. The Demoness does not tempt — she mirrors what already seeks release. Through her, destruction becomes the truest confession of creation.",
+        },
+        {
+          name: "Door",
+          desc: "Every threshold hides both entry and escape. The Door is not an object, but a choice that reshapes reality. To open it is to admit that change is no longer waiting for permission.",
+        },
+        {
+          name: "Error",
+          desc: "A fracture in the pattern, a pause between intentions. Error reminds that imperfection is not deviation but proof of life. What fails beautifully teaches more than perfection ever could.",
+        },
+        {
+          name: "Fool",
+          desc: "The path begins where certainty ends. The Fool moves without map, guided by the rhythm of unseen winds. Innocence, once scorned, becomes the boldest form of wisdom.",
+        },
+        {
+          name: "Hanged Man",
+          desc: "Suspended between movement and stillness, the Hanged Man sees the world inverted. Suffering turns into sight; loss into revelation. True transformation demands surrender, not struggle.",
+        },
+        {
+          name: "Hermit",
+          desc: "In silence, truth hums quietly beneath the noise of the world. The Hermit walks not away from others, but toward the unseen center. Solitude becomes the lantern that guides the mind home.",
+        },
+        {
+          name: "Justiciar",
+          desc: "Balance is not born of purity but of tension. The Justiciar weighs light and shadow, unmoved by sentiment. Justice, in its truest form, does not comfort — it clarifies.",
+        },
+        {
+          name: "Moon",
+          desc: "Reflections tremble upon uncertain water. The Moon reveals through illusion what clarity conceals. Its shifting glow speaks of truths that cannot survive the daylight.",
+        },
+        {
+          name: "Mother",
+          desc: "All that grows carries her pulse. The Mother shelters both birth and decay, nurturing even what must one day fade. Her tenderness is not weakness, but the quiet architecture of renewal.",
+        },
+        {
+          name: "Paragon",
+          desc: "Perfection is a mirage crafted from the ache for meaning. The Paragon embodies the unreachable ideal — not to be attained, but pursued. In striving toward light, one learns the shape of their shadow.",
+        },
+        {
+          name: "Red Priest",
+          desc: "Faith bleeds crimson beneath ritual and flame. The Red Priest does not pray for mercy, but for power wrapped in sacrifice. Devotion burns brightest when it risks consuming the devotee.",
+        },
+        {
+          name: "Sun",
+          desc: "Within radiance lies revelation — yet light also blinds. The Sun restores what darkness forgets, but demands that nothing remain hidden. Its warmth is both blessing and reckoning.",
+        },
+        {
+          name: "Twilight Giant",
+          desc: "At the horizon of dusk and dawn stands the Twilight Giant — vast, fading, eternal. Strength softens into surrender, and endings bloom into beginnings. Change, once feared, becomes devotion itself.",
+        },
+        {
+          name: "Tyrant",
+          desc: "Authority wears the face of conviction. The Tyrant believes in order even as it fractures beneath their will. Power is not held — it is endured, and every command echoes with the cost of control.",
+        },
+        {
+          name: "Visionary",
+          desc: "Sight extends beyond the seen, touching what lies between thought and dream. The Visionary perceives futures not yet written, but risks vanishing into them. To know too much is to forget how to return.",
+        },
+        {
+          name: "Wheel of Fortune",
+          desc: "The pattern spins — neither mercy nor malice, only motion. Fortune changes not as punishment but as rhythm. Those who listen may hear destiny hum like quiet machinery beneath chance.",
+        },
+        {
+          name: "White Tower",
+          desc: "From clarity rises isolation. The White Tower stands brilliant yet alone, its wisdom echoing through empty halls. Knowledge, when kept too pure, turns inward and devours its keeper.",
+        },
+      ];
+
+      function drawCard() {
+        const card = document.getElementById("tarotCard");
+        const title = document.getElementById("tarotTitle");
+        const desc = document.getElementById("tarotDesc");
+
+        card.classList.remove("glow");
+        desc.classList.remove("show");
+
+        card.classList.add("flipping");
+
+        const random = Math.floor(Math.random() * tarotCards.length);
+        const chosen = tarotCards[random];
+        const imagePath = `tarots/${chosen.name}.webp`;
+
+        setTimeout(() => {
+          card.style.backgroundImage = `url('${imagePath}')`;
+          title.textContent = chosen.name;
+          desc.textContent = chosen.desc;
+          card.classList.remove("flipping");
+          card.classList.add("glow");
+          setTimeout(() => desc.classList.add("show"), 300);
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
