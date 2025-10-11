@@ -15,10 +15,11 @@
     />
     <link rel="stylesheet" href="style/styleindex.css" />
     <style>
-      body {
+      html, body {
         background-color: white;
         color: black;
         overflow-x: hidden;
+        margin-top: -50px;
       }
 
       .contain-tarot {
@@ -49,19 +50,19 @@
 
       @keyframes flipCard {
         0% {
-          transform: rotateY(0deg) scale(1);
+          transform: rotateY(0deg);
           box-shadow: 0 0 20px rgba(128, 0, 32, 0.3);
         }
         40% {
-          transform: rotateY(180deg) scale(1.05);
+          transform: rotateY(180deg);
           box-shadow: 0 0 35px rgba(128, 0, 32, 0.5);
         }
         70% {
-          transform: rotateY(360deg) scale(1);
+          transform: rotateY(360deg);
           box-shadow: 0 0 25px rgba(128, 0, 32, 0.4);
         }
         100% {
-          transform: rotateY(360deg) scale(1);
+          transform: rotateY(360deg);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
         }
       }
@@ -135,7 +136,6 @@
         transform: translateY(0);
       }
 
-      /* Tombol diperbagus */
       .draw-btn {
         border: none;
         background: linear-gradient(135deg, #800020, #a0002a);
