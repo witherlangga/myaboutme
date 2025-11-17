@@ -12,29 +12,32 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
       #backBtn {
-        font-family: "Times New Roman", serif;
-        display: none;
+        font-family: "Montserrat", sans-serif;
+        background: #8b0010;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 26px;
+        font-size: 15px;
+        cursor: pointer;
         position: fixed;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
-        padding: 12px 24px;
-        font-size: 12px;
-        border: none;
-        background-color: #ffffff;
-        color: black;
-        cursor: pointer;
-        transition: opacity 0.5s ease;
         opacity: 0;
+        display: none;
+        transition: opacity 0.3s ease, transform 0.2s ease, background 0.2s ease;
+        z-index: 999999;
       }
 
       #backBtn.show {
         display: block;
         opacity: 1;
-        padding: 10px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        margin-top: 10px;
+      }
+
+      #backBtn:hover {
+        background: #70000d;
+        transform: translateX(-50%) scale(1.03);
       }
     </style>
   </head>

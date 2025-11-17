@@ -105,24 +105,24 @@ function loadLyrics(audio, lyricsData) {
 function showFallbackBtn(audio) {
   const fallbackBtn = document.createElement("button");
   fallbackBtn.textContent = "Play Music";
-  fallbackBtn.style.position = "fixed";
-  fallbackBtn.style.bottom = "25px";
-  fallbackBtn.style.left = "50%";
-  fallbackBtn.style.transform = "translateX(-50%)";
-  fallbackBtn.style.padding = "12px 28px";
+  fallbackBtn.style.padding = "12px 22px";
   fallbackBtn.style.background = "#800020";
   fallbackBtn.style.color = "#fff";
   fallbackBtn.style.border = "none";
-  fallbackBtn.style.borderRadius = "6px";
+  fallbackBtn.style.borderRadius = "10px";
   fallbackBtn.style.cursor = "pointer";
-  fallbackBtn.style.zIndex = "9999";
-  fallbackBtn.style.fontFamily = "Montserrat, sans-serif";
-  fallbackBtn.style.fontSize = "16px";
-  fallbackBtn.style.boxShadow = "0 4px 12px rgba(0,0,0,0.25)";
+
+  fallbackBtn.style.position = "fixed";
+  fallbackBtn.style.bottom = "30px";
+  fallbackBtn.style.left = "50%";
+  fallbackBtn.style.transform = "translateX(-50%)";
+  fallbackBtn.style.zIndex = "999999";
 
   document.body.appendChild(fallbackBtn);
 
   fallbackBtn.addEventListener("click", () => {
-    audio.play().catch(() => {});
+    audio.play().catch(err => console.log(err));
+    fallbackBtn.style.display = "none"; // tombol hilang setelah diklik
   });
 }
+
