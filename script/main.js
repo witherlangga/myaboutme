@@ -98,7 +98,7 @@ function loadLyrics(audio, lyricsData) {
 
 function showFallbackBtn(audio) {
   const fallbackBtn = document.createElement("button");
-  fallbackBtn.textContent = "play";
+  fallbackBtn.textContent = "play tes";
   fallbackBtn.style.padding = "10px 20px";
   fallbackBtn.style.marginTop = "20px";
   fallbackBtn.style.background = "#800020";
@@ -117,3 +117,4 @@ function showFallbackBtn(audio) {
     fallbackBtn.remove();
   });
 }
+
