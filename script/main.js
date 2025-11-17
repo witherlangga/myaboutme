@@ -1,25 +1,25 @@
 window.addEventListener("load", () => {
-    const savedSong = localStorage.getItem("selectedSong");
+  const savedSong = localStorage.getItem("selectedSong");
 
-    if (savedSong) {
-      const song = JSON.parse(savedSong);
-      playSelectedSong(song);
-      localStorage.removeItem("selectedSong");
-    } else {
-      Swal.fire({
-        title: "Do you want to play music in the background?",
-        icon: "question",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes",
-        cancelButtonText: "No",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          playRandomSong();
-        }
-      });
-    }
+  if (savedSong) {
+    const song = JSON.parse(savedSong);
+    playSelectedSong(song);
+    localStorage.removeItem("selectedSong");
+  } else {
+    Swal.fire({
+      title: "Do you want to play music in the background?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes",
+      cancelButtonText: "No",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        playRandomSong();
+      }
+    });
+  }
 });
 
 function parseTime(t) {
@@ -37,12 +37,15 @@ function playSelectedSong(song) {
 
       audio.src = song.file;
 
-      audio.play().then(() => {
-        console.log("Song is playing:", song.name);
-      }).catch(err => {
-        console.warn("Failed to play:", err);
-        showFallbackBtn(audio);
-      });
+      audio
+        .play()
+        .then(() => {
+          console.log("Song is playing:", song.name);
+        })
+        .catch((err) => {
+          console.warn("Failed to play:", err);
+          showFallbackBtn(audio);
+        });
 
       if (found) loadLyrics(audio, found.lyrics);
     })
@@ -60,13 +63,16 @@ function playRandomSong() {
 
       audio.src = song.file;
 
-      audio.play().then(() => {
-        console.log("Song is playing:", song.name);
-        loadLyrics(audio, song.lyrics);
-      }).catch(err => {
-        console.warn("Failed to play:", err);
-        showFallbackBtn(audio);
-      });
+      audio
+        .play()
+        .then(() => {
+          console.log("Song is playing:", song.name);
+          loadLyrics(audio, song.lyrics);
+        })
+        .catch((err) => {
+          console.warn("Failed to play:", err);
+          showFallbackBtn(audio);
+        });
     })
     .catch((err) => console.error("Gagal memuat data lagu:", err));
 }
@@ -98,23 +104,25 @@ function loadLyrics(audio, lyricsData) {
 
 function showFallbackBtn(audio) {
   const fallbackBtn = document.createElement("button");
-  fallbackBtn.textContent = "play tes";
-  fallbackBtn.style.padding = "10px 20px";
-  fallbackBtn.style.marginTop = "20px";
+  fallbackBtn.textContent = "Play Music";
+  fallbackBtn.style.position = "fixed";
+  fallbackBtn.style.bottom = "25px";
+  fallbackBtn.style.left = "50%";
+  fallbackBtn.style.transform = "translateX(-50%)";
+  fallbackBtn.style.padding = "12px 28px";
   fallbackBtn.style.background = "#800020";
   fallbackBtn.style.color = "#fff";
   fallbackBtn.style.border = "none";
-  fallbackBtn.style.borderRadius = "8px";
+  fallbackBtn.style.borderRadius = "10px";
   fallbackBtn.style.cursor = "pointer";
-  fallbackBtn.style.display = "block";
-  fallbackBtn.style.marginLeft = "auto";
-  fallbackBtn.style.marginRight = "auto";
+  fallbackBtn.style.zIndex = "9999";
+  fallbackBtn.style.fontFamily = "Montserrat, sans-serif";
+  fallbackBtn.style.fontSize = "16px";
+  fallbackBtn.style.boxShadow = "0 4px 12px rgba(0,0,0,0.25)";
 
   document.body.appendChild(fallbackBtn);
 
   fallbackBtn.addEventListener("click", () => {
-    audio.play();
-    fallbackBtn.remove();
+    audio.play().catch(() => {});
   });
 }
-
