@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>we.html</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 120px;
+      }
+
+      .swal2-popup {
+        font-family: "Montserrat", sans-serif;
+        border-radius: 15px !important;
+        padding: 25px !important;
+      }
+
+      .swal-input-custom {
+        border: 1px solid #ccc !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border-radius: 6px !important;
+        padding: 10px 14px !important;
+        font-size: 16px;
+        transition: border-color 0.2s ease;
+      }
+
+      .swal-input-custom:focus {
+        border: 1px solid #666666 !important;
+        box-shadow: none !important;
+      }
+
+      .swal-button-custom {
+        background: #8b0010 !important;
+        color: #fff !important;
+        border-radius: 6px !important;
+        padding: 8px 20px !important;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio id="bgmusic" loop></audio>
+
+    <script>
+      async function sha256(text) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(text);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+      }
+
+      const hashedPassword =
+        "0d0fa5f5d36a2fc2c5d61338f6c5ba3c7dc2e6bda4a47f5b04cc807ba79d7d12";
+
+      async function checkPassword() {
+        const { value: password } = await Swal.fire({
+          title: "Enter Password",
+          input: "password",
+          inputPlaceholder: "Password",
+          background: "#ffffff",
+          color: "#000",
+          allowOutsideClick: false,
+          showCancelButton: false,
+          confirmButtonText: "Submit",
+          customClass: {
+            input: "swal-input-custom",
+            confirmButton: "swal-button-custom",
+          },
+        });
+
+        const hash = await sha256(password);
+
+        if (hash === hashedPassword) {
+          return true;
+        } else {
+          await Swal.fire({
+            icon: "error",
+            title: "wrong password, four digits",
+            confirmButtonColor: "#8b0010",
+          });
+          return checkPassword();
+        }
+      }
+
+      window.addEventListener("load", async () => {
+        const ok = await checkPassword();
+        if (!ok) return;
+
+        const now = new Date();
+        const hour = now.getHours();
+        const isNight = hour >= 22 || hour < 7;
+
+        const audio = document.getElementById("bgmusic");
+
+        if (isNight) {
+          audio.src = "music/Joji - Glimpse of Us (Official Instrumental).mp3";
+        } else {
+          audio.src = "music/We Don't Talk Anymore Instrumental.mp3";
+        }
+
+        Swal.fire({
+          title: "Play Music?",
+          text: "Allow this page to play background music.",
+          icon: "question",
+          showCancelButton: true,
+          confirmButtonText: "Allow",
+          cancelButtonText: "Deny",
+          confirmButtonColor: "#8b0010",
+          cancelButtonColor: "#555",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            audio.play().catch((err) => {
+              console.log("Autoplay blocked:", err);
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
