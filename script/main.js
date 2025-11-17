@@ -113,7 +113,7 @@ function showFallbackBtn(audio) {
   fallbackBtn.style.background = "#800020";
   fallbackBtn.style.color = "#fff";
   fallbackBtn.style.border = "none";
-  fallbackBtn.style.borderRadius = "10px";
+  fallbackBtn.style.borderRadius = "6px";
   fallbackBtn.style.cursor = "pointer";
   fallbackBtn.style.zIndex = "9999";
   fallbackBtn.style.fontFamily = "Montserrat, sans-serif";
