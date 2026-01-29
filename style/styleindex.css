@@ -1,3 +1,61 @@
+/* === INTEREST SECTION === */
+.interest-section {
+  margin-top: 30px;
+}
+.interest-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.interest-card {
+  background: #f8f8fa;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  width: 220px;
+  padding: 28px 18px 20px 18px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interest-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+}
+.interest-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.interest-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #800020;
+  font-family: 'Montserrat', sans-serif;
+}
+.interest-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+.interest-desc {
+  margin-top: 32px;
+  font-size: 15px;
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 900px) {
+  .interest-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .interest-card {
+    width: 90%;
+    max-width: 350px;
+  }
+}
 html,
 body {
   background-color: white;
@@ -22,7 +80,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   background-color: white;
-  padding: 10px 20px;
+  padding: 18px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +98,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
@@ -75,7 +133,7 @@ body::-webkit-scrollbar {
   padding: 14px 20px;
   color: #333;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
