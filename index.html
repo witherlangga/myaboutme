@@ -27,22 +27,22 @@
     <!===== HEADER NAVBAR =====>
     <div class="header">
       <div class="nav-links">
-        <a href="#contact">Contact</a>
         <a href="#">Home</a>
         <a href="#aboutme">About</a>
+        <a href="#bahasa">Learning</a>
         <a href="#interest">Interest</a>
-        <a href="#bahasa">Learn</a>
+                <a href="#contact">Contact</a>
       </div>
 
-      <div class="menu" onclick="toggleDropdown()">⋮</div>
+      <div class="menu" onclick="toggleDropdown()">&bull;</div>
 
       <div id="dropdown" class="dropdown">
         <a href="songoftheday.html">song of the day</a>
         <a href="special.html">my special content</a>
-        <a href="songss.html">all song</a>
-        <a href="flip.html">coin flip</a>
-        <a href="tarots.html">your pathway</a>
-        <a href="we.html">we</a>
+        <a href="songss.html">all songs</a>
+        <a href="flip.html">flip</a>
+        <a href="tarots.html">pathway</a>
+        <a href="we.html">nevermind</a>
       </div>
     </div>
 
@@ -115,6 +115,15 @@
 
         <div style="width: 120px; text-align: center">
           <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg"
+            alt="Excel Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Excel</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
             alt="GitHub Logo"
             style="width: 100px; height: 100px; object-fit: contain"
@@ -139,6 +148,7 @@
           />
           <p style="margin-top: 10px; font-weight: 600">Python</p>
         </div>
+
         <div style="width: 120px; text-align: center">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
@@ -146,14 +156,6 @@
             style="width: 100px; height: 100px; object-fit: contain"
           />
           <p style="margin-top: 10px; font-weight: 600">PHP</p>
-        </div>
-        <div style="width: 120px; text-align: center">
-          <img
-            src="img/pngwing.com.png"
-            alt="Laragon Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
-          />
-          <p style="margin-top: 10px; font-weight: 600">Laragon</p>
         </div>
 
         <div style="width: 120px; text-align: center">
@@ -167,11 +169,29 @@
 
         <div style="width: 120px; text-align: center">
           <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-            alt="MySQL Logo"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React.js Logo"
             style="width: 100px; height: 100px; object-fit: contain"
           />
-          <p style="margin-top: 10px; font-weight: 600">MySQL</p>
+          <p style="margin-top: 10px; font-weight: 600">React.js</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="https://www.svgrepo.com/show/374118/tailwind.svg"
+            alt="Tailwind CSS Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Tailwind</p>
+        </div>
+
+        <div style="width: 120px; text-align: center">
+          <img
+            src="img/database.svg"
+            alt="Database Logo"
+            style="width: 100px; height: 100px; object-fit: contain"
+          />
+          <p style="margin-top: 10px; font-weight: 600">Database</p>
         </div>
       </div>
     </section>
@@ -184,30 +204,30 @@
           <div class="interest-card">
             <i class="fas fa-robot interest-icon" style="color: #4b0082;"></i>
             <h3>AI</h3>
-            <p>Mempelajari kecerdasan buatan untuk menciptakan solusi inovatif dan otomatisasi cerdas.</p>
+            <p>Smart solutions, real impact.</p>
           </div>
           <div class="interest-card">
             <i class="fas fa-code interest-icon" style="color: #0077ff;"></i>
-            <h3>Web Development</h3>
-            <p>Membangun website dan aplikasi web yang interaktif, responsif, dan modern.</p>
+            <h3>Web Dev</h3>
+            <p>Modern, fast, and user-first.</p>
           </div>
           <div class="interest-card">
             <i class="fas fa-brain interest-icon" style="color: #e67e22;"></i>
-            <h3>System Intelligent</h3>
-            <p>Mengembangkan sistem cerdas yang mampu mengambil keputusan secara otomatis.</p>
+            <h3>Intelligent Systems</h3>
+            <p>Automation that thinks ahead.</p>
           </div>
           <div class="interest-card">
             <i class="fas fa-puzzle-piece interest-icon" style="color: #16a085;"></i>
-              <h3>Data Analist</h3>
-            <p>Menikmati tantangan dalam memecahkan masalah kompleks dengan pendekatan logis dan kreatif.</p>
+              <h3>Data</h3>
+            <p>Insightful, creative, clear.</p>
           </div>
         </div>
-        <div class="interest-desc">Sebagai mahasiswa CS, aku ingin terus mengeksplorasi bidang-bidang ini untuk membentuk arah minat dan masa depan karierku.</div>
+        <div class="interest-desc">Always learning. Always building.</div>
       </section>
 
     <!===== FOOTER =====>
     <footer class="footer" id="contact">
-      <h2 class="footer-one">Contact Me</h2>
+      <h2 class="text-h2">Contact</h2>
       <div class="footer-socials">
         <a href="https://github.com/witherlangga" target="_blank"
           ><i class="fab fa-github"></i
@@ -219,6 +239,7 @@
           ><i class="fab fa-whatsapp"></i
         ></a>
       </div>
+      <p style="margin-top: 18px; color: #888; font-size: 15px;">Let’s connect.</p>
     </footer>
     <!===== SCRIPT =====>
     <script>

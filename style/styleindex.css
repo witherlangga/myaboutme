@@ -32,7 +32,7 @@
 .interest-card h3 {
   margin: 0 0 10px 0;
   font-size: 20px;
-  color: #800020;
+  color: #111;
   font-family: 'Montserrat', sans-serif;
 }
 .interest-card p {
@@ -80,38 +80,65 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   background-color: white;
-  padding: 18px 32px;
+  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #80002010;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: black;
+  color: #111;
+  font-family: "Times New Roman", Times, serif !important;
   font-weight: 600;
-  font-size: 18px;
-  transition: color 0.3s ease;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+@media (max-width: 900px) {
+  .nav-links a {
+    font-size: 13px;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links a {
+    font-size: 11px;
+    padding: 2px 0;
+  }
 }
 
 .nav-links a:hover {
-  color: #555;
+  color: #800020;
+  border-bottom: 2px solid #800020;
 }
 
 .menu {
   cursor: pointer;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 22px;
   user-select: none;
   z-index: 9999;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
 }
 
 .dropdown {
