@@ -27,15 +27,28 @@ function parseTime(t) {
   return parts[0] * 60 + parts[1];
 }
 
+function normalizeSongPath(path) {
+  return path.replace(/^\.\//, "").replace(/^\.\.\//, "");
+}
+
 function playSelectedSong(song) {
-  fetch("data/lyrics.json")
+  fetch("../data/lyrics.json")
     .then((response) => response.json())
     .then((allSongs) => {
-      const found = allSongs.find((s) => s.file === song.file);
+      const found = allSongs.find((s) => normalizeSongPath(s.file) === normalizeSongPath(song.file));
       const audio = document.querySelector(".song");
       const lyricsContainer = document.getElementById("lyrics");
 
-      audio.src = song.file;
+      if (song.removed || found?.removed) {
+        if (lyricsContainer) {
+          lyricsContainer.textContent = song.comment || found?.comment || "Lirik ini disimpan sebagai catatan karena musik terkait sudah dihapus dari daftar.";
+        }
+        return;
+      }
+
+      const resolvedSongPath = song.file.startsWith("music/") ? "../" + song.file : song.file;
+
+      audio.src = resolvedSongPath;
 
       audio
         .play()
@@ -53,15 +66,22 @@ function playSelectedSong(song) {
 }
 
 function playRandomSong() {
-  fetch("data/lyrics.json")
+  fetch("../data/lyrics.json")
     .then((response) => response.json())
     .then((allSongs) => {
-      const randomIndex = Math.floor(Math.random() * allSongs.length);
-      const song = allSongs[randomIndex];
+      const availableSongs = allSongs.filter((song) => !song.removed);
+
+      if (!availableSongs.length) {
+        return;
+      }
+
+      const randomIndex = Math.floor(Math.random() * availableSongs.length);
+      const song = availableSongs[randomIndex];
       const audio = document.querySelector(".song");
       const lyricsContainer = document.getElementById("lyrics");
+      const resolvedSongPath = song.file.startsWith("music/") ? "../" + song.file : song.file;
 
-      audio.src = song.file;
+      audio.src = resolvedSongPath;
 
       audio
         .play()

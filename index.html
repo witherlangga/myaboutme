@@ -19,32 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/styleindex.css" />
-    <style>
-    </style>
+    <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
     <!===== HEADER NAVBAR =====>
-    <div class="header">
-      <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#aboutme">About</a>
-        <a href="#bahasa">Learning</a>
-        <a href="#interest">Interest</a>
-                <a href="#contact">Contact</a>
-      </div>
-
-      <div class="menu" onclick="toggleDropdown()">&bull;</div>
-
-      <div id="dropdown" class="dropdown">
-        <a href="songoftheday.html">song of the day</a>
-        <a href="special.html">my special content</a>
-        <a href="songss.html">all songs</a>
-        <a href="flip.html">flip</a>
-        <a href="tarots.html">pathway</a>
-        <a href="we.html">nevermind</a>
-      </div>
-    </div>
+    <div id="navbar"></div>
 
     <!===== BODY =====>
     <div class="contain" id="aboutme">
@@ -71,153 +50,141 @@
       </div>
     </div>
 
-    <section
-      class="learn"
-      id="bahasa"
-      style="padding: 40px 20px; background: #f9f9f9; text-align: center"
-    >
+    <section class="learn learn-section" id="bahasa">
       <h2 class="text-h2">Currently Learning</h2>
-      <div
-        style="
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 30px;
-          margin-top: 30px;
-        "
-      >
-        <div style="width: 120px; text-align: center">
+      <div class="tech-grid">
+        <div class="tech-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
             alt="HTML Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">HTML</p>
+          <p class="tech-label">HTML</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
             alt="CSS Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">CSS</p>
+          <p class="tech-label">CSS</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
             alt="JavaScript Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">JavaScript</p>
+          <p class="tech-label">JavaScript</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg"
             alt="Excel Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">Excel</p>
+          <p class="tech-label">Excel</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
             alt="GitHub Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">GitHub</p>
+          <p class="tech-label">GitHub</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg"
             alt="Git Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">Git</p>
+          <p class="tech-label">Git</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
             alt="Python Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">Python</p>
+          <p class="tech-label">Python</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
             alt="PHP Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">PHP</p>
+          <p class="tech-label">PHP</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
             alt="Laravel Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">Laravel</p>
+          <p class="tech-label">Laravel</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
             alt="React.js Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">React.js</p>
+          <p class="tech-label">React.js</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="https://www.svgrepo.com/show/374118/tailwind.svg"
             alt="Tailwind CSS Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">Tailwind</p>
+          <p class="tech-label">Tailwind</p>
         </div>
 
-        <div style="width: 120px; text-align: center">
+        <div class="tech-card">
           <img
             src="img/database.svg"
             alt="Database Logo"
-            style="width: 100px; height: 100px; object-fit: contain"
+            class="tech-image"
           />
-          <p style="margin-top: 10px; font-weight: 600">Database</p>
+          <p class="tech-label">Database</p>
         </div>
       </div>
     </section>
 
       <!-- What I'm Interested In Section -->
-      <section class="interest-section" style="padding: 40px 20px; background: #fff; text-align: center">
+      <section class="interest-section">
         <a id="interest"></a>
         <h2 class="text-h2">What I'm Interested In</h2>
         <div class="interest-cards">
           <div class="interest-card">
-            <i class="fas fa-robot interest-icon" style="color: #4b0082;"></i>
+            <i class="fas fa-robot interest-icon icon-ai"></i>
             <h3>AI</h3>
             <p>Smart solutions, real impact.</p>
           </div>
           <div class="interest-card">
-            <i class="fas fa-code interest-icon" style="color: #0077ff;"></i>
+            <i class="fas fa-code interest-icon icon-web"></i>
             <h3>Web Dev</h3>
             <p>Modern, fast, and user-first.</p>
           </div>
           <div class="interest-card">
-            <i class="fas fa-brain interest-icon" style="color: #e67e22;"></i>
+            <i class="fas fa-brain interest-icon icon-systems"></i>
             <h3>Intelligent Systems</h3>
             <p>Automation that thinks ahead.</p>
           </div>
           <div class="interest-card">
-            <i class="fas fa-puzzle-piece interest-icon" style="color: #16a085;"></i>
+            <i class="fas fa-puzzle-piece interest-icon icon-data"></i>
               <h3>Data</h3>
             <p>Insightful, creative, clear.</p>
           </div>
@@ -239,9 +206,10 @@
           ><i class="fab fa-whatsapp"></i
         ></a>
       </div>
-      <p style="margin-top: 18px; color: #888; font-size: 15px;">Let’s connect.</p>
+      <p class="footer-note">Let’s connect.</p>
     </footer>
     <!===== SCRIPT =====>
+    <script src="script/navbar.js"></script>
     <script>
       function mainkan() {
         const audio = document.getElementById("audio");
@@ -249,22 +217,6 @@
         audio.currentTime = 0;
         audio.play();
       }
-
-      function toggleDropdown() {
-        document.getElementById("dropdown").classList.toggle("show");
-      }
-
-      window.onclick = function (event) {
-        if (!event.target.matches(".menu")) {
-          const dropdowns = document.getElementsByClassName("dropdown");
-          for (let i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
     </script>
   </body>
 </html>

@@ -1,2 +1,2 @@
 # for my profile
-create by Erlangga Syafutra
+create by Erlangga S.

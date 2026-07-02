@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coin flip.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+
+  <body>
+    <!===== HEADER NAVBAR =====>
+    <div id="navbar"></div>
+
+    <!-- === ISI HALAMAN COIN FLIP === -->
+    <div class="coin-container">
+      <h2>Flip</h2>
+      <h1 id="tarotTitle">SUN or MOON!</h1>
+
+      <div class="coin" id="coin">
+        <div class="side heads"></div>
+        <div class="side tails"></div>
+      </div>
+
+      <div class="btn-group">
+        <button class="draw-btn flip-btn" id="flipBtn">Flip</button>
+        <button class="draw-btn dropdown-toggle" id="coinToggle" title="Switch design">
+          <i class="fa-solid fa-sync-alt"></i>
+        </button>
+      </div>
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <!-- === SCRIPT === -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../script/navbar.js"></script>
+    <script>
+      const coin = document.getElementById("coin");
+      const result = document.getElementById("result");
+      const flipBtn = document.getElementById("flipBtn");
+      const tarotTitle = document.getElementById("tarotTitle");
+      const coinToggle = document.getElementById("coinToggle");
+
+      const coinSets = [
+        { name: "SUN or MOON", heads: "../flip/Sun.jpeg", tails: "../flip/Moon.jpeg" },
+        { name: "QUEEN or KING", heads: "../flip/Queen.jpeg", tails: "../flip/King.jpeg" },
+      ];
+
+      let currentSet = 0;
+
+      flipBtn.addEventListener("click", () => {
+        result.textContent = "";
+        result.classList.remove("text-p2");
+        coin.style.animation = "none";
+        result.style.display = "none";
+
+        const random = Math.random();
+
+        if (random < 0.5) {
+          setTimeout(() => {
+            coin.style.animation = "spin-heads 2s forwards";
+          }, 100);
+          setTimeout(() => {
+            result.textContent = `you got: ${coinSets[currentSet].name.split(" or ")[0]}`;
+            result.classList.add("text-p2");
+            result.style.display = "block";
+          }, 2000);
+        } else {
+          setTimeout(() => {
+            coin.style.animation = "spin-tails 2s forwards";
+          }, 100);
+          setTimeout(() => {
+            result.textContent = `you got: ${coinSets[currentSet].name.split(" or ")[1]}`;
+            result.classList.add("text-p2");
+            result.style.display = "block";
+          }, 2000);
+        }
+      });
+
+      // === Dropdown toggle untuk pilihan coin ===
+      coinToggle.addEventListener("click", () => {
+        currentSet = (currentSet + 1) % coinSets.length;
+        document.querySelector(".heads").style.backgroundImage = `url('${coinSets[currentSet].heads}')`;
+        document.querySelector(".tails").style.backgroundImage = `url('${coinSets[currentSet].tails}')`;
+        tarotTitle.textContent = coinSets[currentSet].name + "!";
+
+        result.textContent = "";
+        result.style.display = "none";
+
+        if (coinSets[currentSet].name.includes("QUEEN")) {
+          coin.classList.add("square");
+        } else {
+          coin.classList.remove("square");
+        }
+      });
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".menu")) {
+          const dropdowns = document.getElementsByClassName("dropdown");
+          for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

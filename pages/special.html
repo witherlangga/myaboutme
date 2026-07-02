@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>special content</title>
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+  <body>
+    <div>nyari apa?</div>
+    <button onclick="mainkan()">keluar</button>
+
+    <audio id="audio">
+      <source src="../music/get out.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+    <script>
+      function mainkan() {
+        const audio = document.getElementById("audio");
+        audio.currentTime = 0;
+        audio.play();
+
+        setTimeout(() => {
+          window.location.href = "../index.html";
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
