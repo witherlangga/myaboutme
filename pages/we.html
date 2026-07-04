@@ -33,15 +33,10 @@
           title: "Enter Password",
           input: "password",
           inputPlaceholder: "Password",
-          background: "#ffffff",
-          color: "#000",
           allowOutsideClick: false,
           showCancelButton: false,
           confirmButtonText: "Submit",
-          customClass: {
-            input: "swal-input-custom",
-            confirmButton: "swal-button-custom",
-          },
+          confirmButtonColor: "#111",
         });
 
         const hash = await sha256(password);
@@ -51,8 +46,8 @@
         } else {
           await Swal.fire({
             icon: "error",
-            title: "wrong password, four digits",
-            confirmButtonColor: "#8b0010",
+            title: "wrong password",
+            confirmButtonColor: "#111",
           });
           return checkPassword();
         }
@@ -81,8 +76,8 @@
           showCancelButton: true,
           confirmButtonText: "Allow",
           cancelButtonText: "Deny",
-          confirmButtonColor: "#8b0010",
-          cancelButtonColor: "#555",
+          confirmButtonColor: "#111",
+          cancelButtonColor: "#f5f5f5",
         }).then((result) => {
           if (result.isConfirmed) {
             audio.play().catch((err) => {

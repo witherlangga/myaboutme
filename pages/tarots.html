@@ -140,7 +140,7 @@
 
         const random = Math.floor(Math.random() * tarotCards.length);
         const chosen = tarotCards[random];
-        const imagePath = `../tarots/${chosen.name}.webp`;
+        const imagePath = encodeURI(`../tarots/${chosen.name}.webp`);
 
         setTimeout(() => {
           card.style.backgroundImage = `url('${imagePath}')`;

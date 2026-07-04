@@ -25,7 +25,7 @@
 
       <div class="search-box">
         <input type="text" id="searchInput" placeholder="type song title" />
-        <button class="draw-btn" id="searchBtn">Search</button>
+        <button class="search-btn" id="searchBtn">Search</button>
       </div>
 
       <div class="song-list" id="songList"></div>
@@ -108,22 +108,8 @@
       const playLocalBtn = div.querySelector(".play-local-btn");
 
       dayBtn.addEventListener("click", () => {
-        Swal.fire({
-          title: "Do you want to play this song with lyrics?",
-          icon: "question",
-          showCancelButton: true,
-          confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Yes",
-          cancelButtonText: "No",
-          allowOutsideClick: false
-        }).then(result => {
-          if (result.isConfirmed) {
-            Swal.close();
-            localStorage.setItem("selectedSong", JSON.stringify(song));
-            window.location.href = "songoftheday.html";
-          }
-        });
+        localStorage.setItem("selectedSong", JSON.stringify(song));
+        window.location.href = "songoftheday.html";
       });
 
       playLocalBtn.addEventListener("click", () => {

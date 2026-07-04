@@ -10,8 +10,8 @@ window.addEventListener("load", () => {
       title: "Do you want to play music in the background?",
       icon: "question",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
+      confirmButtonColor: "#111",
+      cancelButtonColor: "#f5f5f5",
       confirmButtonText: "Yes",
       cancelButtonText: "No",
     }).then((result) => {
@@ -126,8 +126,8 @@ function showFallbackBtn(audio) {
   const fallbackBtn = document.createElement("button");
   fallbackBtn.textContent = "Play Music";
   fallbackBtn.style.padding = "12px 22px";
-  fallbackBtn.style.background = "#800020";
-  fallbackBtn.style.color = "#fff";
+  fallbackBtn.style.background = "#f5f5f5";
+  fallbackBtn.style.color = "#111";
   fallbackBtn.style.border = "none";
   fallbackBtn.style.borderRadius = "10px";
   fallbackBtn.style.cursor = "pointer";
