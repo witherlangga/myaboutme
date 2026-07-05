@@ -210,6 +210,8 @@ body.we-page {
   border-bottom: 2px solid transparent;
   line-height: 1;
   box-sizing: border-box;
+  white-space: nowrap;
+  height: 24px;
 }
 
 @media (max-width: 900px) {
@@ -245,7 +247,6 @@ body.we-page {
   text-transform: uppercase;
   transition: color 0.3s, border-bottom 0.3s;
   padding: 4px 10px;
-
   user-select: none;
   z-index: 9999;
   line-height: 1;
@@ -253,6 +254,8 @@ body.we-page {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  white-space: nowrap;
+  height: 24px;
 }
 
 .dropdown {
